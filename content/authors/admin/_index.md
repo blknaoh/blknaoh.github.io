@@ -40,7 +40,7 @@ education:
       year: 2019 to present
     - course: BEng in Telecommunication Engineering
       institution: Tiangong University
-      year: 2009
+      year: 2019
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
