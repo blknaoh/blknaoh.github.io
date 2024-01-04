@@ -37,7 +37,7 @@ education:
   courses:
     - course: PhD in Ocean Technology and Engineering
       institution: Zhejiang University
-      year: 2019 to present
+      year: 2019 - present
     - course: BEng in Telecommunication Engineering
       institution: Tiangong University
       year: 2015 - 2019
