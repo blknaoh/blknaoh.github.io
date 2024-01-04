@@ -248,8 +248,8 @@ sections:
         country_code: CN
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '29.997685517000075'
-        longitude: '122.16409762300113'  
+        latitude: '29.997661782915856'
+        longitude: '122.16415510120882'  
       contact_links:
         - icon: twitter
           icon_pack: fab
