@@ -1,5 +1,5 @@
 ---
-title: "An example journal article"
+title: "Channel Distribution and Noise Characteristics of Distributed Acoustic Sensing Underwater Communications"
 authors:
 - admin
 - Robert Ford
