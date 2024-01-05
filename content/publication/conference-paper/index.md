@@ -1,23 +1,26 @@
 ---
-title: 'An example conference paper'
+title: 'Direct Acoustic Communication between Underwater and Airborne Nodes'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
-  - Robert Ford
+  - Shaojian Yang
+  - Yimu Yang
+  - Xingbin Tu
+  - Xuesong Lu
+  - Yan Wei
+  - Fengzhong Qu
 
 # Author notes (optional)
 author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+  - ''
 
-date: '2013-07-01T00:00:00Z'
+date: '2023-12-07T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2023-10-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -28,10 +31,10 @@ publication_types: ['paper-conference']
 publication: In *Hugo Blox Builder Conference*
 publication_short: In *ICW*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Direct acoustic communication between underwater and airborne nodes has always been considered unfeasible due to the energy loss caused by the strong surface reflection of sound waves. However, contrary to popular belief, our study demonstrates that underwater transducers can effectively transmit detectable acoustic signals in the air. To investigate this phenomenon, we conducted an experiment involving the deployment of an underwater transducer at a depth of 1 m, while an unoccupied aerial vehicle equipped with a voice recorder was positioned at various altitudes ranging from 2 to 30 m and horizontal distances of 0–30 m. Sound pressure levels were measured at 20 different positions within the frequency range of 10–20kHz, and orthogonal frequency division multiplex acoustic communication signals were recorded at specific positions. Our findings reveal the successful establishment of a direct acoustic communication link between the water and air interface, achieving a data rate of 4.565 kbps. This study opens up new possibilities for practical applications in underwater-to-air communication systems.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary:  Our findings reveal the successful establishment of a direct acoustic communication link between the water and air interface, achieving a data rate of 4.565 kbps.
 
 tags: []
 
@@ -44,13 +47,13 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: ''
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -64,16 +67,14 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - example
+projects:[]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
----
+slides: []
 
 {{% callout note %}}
 Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
