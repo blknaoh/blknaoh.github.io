@@ -13,8 +13,7 @@ authors:
   - Fengzhong Qu
 
 # Author notes (optional)
-author_notes:
-  - ''
+author_notes: ''
 
 date: '2023-12-07T00:00:00Z'
 doi: ''
@@ -67,14 +66,16 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:[]
+projects:
+  - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: ""
+slides: example
+---
 
 {{% callout note %}}
 Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
