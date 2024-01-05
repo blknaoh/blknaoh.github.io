@@ -13,9 +13,7 @@ authors:
   - Fengzhong Qu
 
 # Author notes (optional)
-author_notes: 
-  - 'Equal contribution'
-  - 'Equal contribution'
+author_notes: ''
 
 date: '2023-12-07T00:00:00Z'
 doi: ''
