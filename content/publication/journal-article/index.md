@@ -46,7 +46,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://doi.org/10.1109/JSEN.2021.3115581'
+url_doi: 'https://doi.org/10.1109/JSEN.2021.3115581'
 url_code: ''
 url_dataset: ''
 url_poster: ''
