@@ -40,7 +40,7 @@ tags:
 - Communication channels
 - Optical fiber sensors
 - Underwater cables
-- Underwater communication
+- Underwater communication
 featured: false
 
 # links:
