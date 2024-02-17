@@ -14,11 +14,11 @@ author_notes:
 - ""
 - ""
 - ""
-date: "2015-09-01T00:00:00Z"
+date: "2021-11-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2021-11-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -26,23 +26,28 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
+publication: "*IEEE Sensors Journal, 21*(21)"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Due to the power and transmission rate limitations, it is challenging to achieve underwater acoustic (UWA) communications over long distances from the unmanned underwater vehicle (UUV) to the shore station. As an alternative solution, the distributed acoustic sensing (DAS) underwater communication uses submarine optical cable to acquire and demodulate acoustic communication signals. There is little research on the channel and noise of DAS underwater communication. This paper analyzes the channel characteristics and the background noise of a DAS underwater communication system with armored optical cable based on the experimental measurements. Channel analysis shows that the envelope amplitudes of impulse responses follow the Burr distribution. The amplitudes get increased concentration at lower values as the sound source goes closer to the position right above the optical cable. Moreover, we observe that the received signals are influenced by the adjacent segments, leading to multiple arrivals within each acoustic bounce. Noise analysis shows that for frequencies lower than 1 kHz, unlike the Wenz noise spectrum primarily caused by shipping and wind, the −18 dB/octave decrease in power spectral density (PSD) of DAS noise is mainly caused by the equipment and cable themselves. The noise also exhibits full-band fluctuations. In underwater communications, full-band noise poses significant challenges for signal design. As far as we know, this article is the first report on the field experiment using a DAS underwater communication system equipped with armored optical cable, providing a reference for future underwater applications.
+
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- Source Themes
+- Acoustic signal detection
+- Communication channels
+- Optical fiber sensors
+- Underwater cables
+- Underwater communication
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: 'https://doi.org/10.1109/JSEN.2021.3115581'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
