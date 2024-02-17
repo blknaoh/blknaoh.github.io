@@ -13,7 +13,8 @@ authors:
   - Fengzhong Qu
 
 # Author notes (optional)
-author_notes: ''
+author_notes: 
+  - 'Corresponding Author'
 
 date: '2023-12-07T00:00:00Z'
 doi: '10.1121/10.0023622'
@@ -74,7 +75,7 @@ projects:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 
 {{% callout note %}}
