@@ -1,11 +1,19 @@
 ---
 title: "Channel Distribution and Noise Characteristics of Distributed Acoustic Sensing Underwater Communications"
 authors:
+- Mingjiu Zuo
+- Xingbin Tu
 - admin
-- Robert Ford
+- Hao Fang
+- Xin Wen
+- Fengzhong Qu
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
+- ""
+- ""
+- "Corresponding Author"
+- ""
+- ""
+- ""
 date: "2015-09-01T00:00:00Z"
 doi: ""
 
