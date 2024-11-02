@@ -64,5 +64,5 @@ social:
 highlight_name: true
 ---
 
-Shaojian Yang was born in Zhangzhou, Fujian, China, in 1997. He received his B.Eng. degree in telecommunication engineering from Tiangong University, Tianjin, China, in 2019. He is currently pursuing his Ph.D. degree in ocean technology and engineering with the Ocean College, Zhejiang University, Zhoushan, China. His current research interests include underwater communications cross-medium communication and ocean observation.
+Shaojian Yang was born in Zhangzhou, Fujian, China, in 1997. He received his B.Eng. degree in telecommunication engineering from Tiangong University, Tianjin, China, in 2019. He is currently pursuing his Ph.D. degree in ocean technology and engineering with the Ocean College, Zhejiang University, Zhoushan, China. His current research interests include underwater communications, cross-medium communication distributed acoustic sensing and ocean observation.
 {style="text-align: justify;"}
