@@ -15,7 +15,7 @@ author_notes:
 - ""
 - ""
 date: "2021-11-01T00:00:00Z"
-doi: ""
+doi: "10.1109/JSEN.2021.3115581"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2021-11-01T00:00:00Z"
