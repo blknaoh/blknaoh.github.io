@@ -1,5 +1,5 @@
 ---
-title: "Channel Distribution and Noise Characteristics of Distributed Acoustic Sensing Underwater Communications"
+title: "Channel Distribution and Noise Characteristics of Distributed Acoustic Sensing Underwater Communications1"
 authors:
 - Mingjiu Zuo
 - Xingbin Tu
