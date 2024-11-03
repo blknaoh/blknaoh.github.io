@@ -38,7 +38,7 @@ abstract: The shallow water environments and the movement of autonomous underwat
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
