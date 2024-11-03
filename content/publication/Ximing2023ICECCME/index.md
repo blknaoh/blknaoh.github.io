@@ -14,13 +14,19 @@ authors:
 
 # Author notes (optional)
 author_notes: 
-  - ''
+- ""
+- ""
+- "Corresponding Author"
+- ""
+- ""
+- ""
+- ""
 
-date: '2023-12-07T00:00:00Z'
-doi: '10.1121/10.0023622'
+date: '2023-07-19T00:00:00Z'
+doi: '10.1109/ICECCME57830.2023.10253189'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2023-10-01T00:00:00Z'
+publishDate: '2023-09-22T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
