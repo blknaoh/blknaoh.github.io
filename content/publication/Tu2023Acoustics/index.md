@@ -28,7 +28,7 @@ publication_types: ['presentation']
 
 # Publication name and optional abbreviated publication name.
 publication: In *185th Meeting of the Acoustical Society of America*
-publication_short: In *Acoustics 2023* - Sydney, Australia*
+publication_short: In *Acoustics 2023* - Sydney, Australia
 
 abstract: The shallow water environments and the movement of autonomous underwater vehicles contribute to the distortion of acoustic signals in both the delay and Doppler domains. Numerous studies have focused on eliminating the distortion in underwater acoustic communications but have struggled to find an optimal trade-off between performance and computational complexity, rendering them impractical for marine engineering applications. In our research, we propose a channel-shortening equalization scheme based on frequency-domain decision feedback equalization (FD-DFE) to address this issue. This approach leverages FD-DFE to reduce the number of multipaths and decreases the Doppler spread of the channel. A time-domain decision feedback equalization based on recursive least squares (RLS-DFE) is then employed to eliminate residual delay and Doppler spreads. The mismatch between the block- and symbol-wise equalization is minimized by an overlapping subblock structure. Numerical simulations have demonstrated the effectiveness of this scheme. Error-free transmissions with a data rate of up to 6 kbps were achieved in a reservoir experiment between an autonomous underwater helicopter (AUH) and a shore-base receiving node.
 
