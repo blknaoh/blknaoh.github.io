@@ -1,26 +1,26 @@
 ---
-title: "Interference Cancellation and Wavelet Denoising for Magnetometers in Electric Work-Class ROVs"
+title: "Source-Based Disjoint Multi-Path Routing Protocol for Underwater Acoustic Networks: Protocol Design and Sea Trials"
 authors:
-- Zitong Sha
-- Shan Hu
+- Yu Yuan
+- Tingwei Lou
 - admin
-- Xingbin Tu
-- Mingjiu Zuo
-- Minhao Zhang
-- Jiaxun Lu
+- Yufan Yuan
+- Xiaoxiao Zhuo
+- Yan Wei
 - Fengzhong Qu
 author_notes:
 - ""
+- ""
+- ""
+- ""
+- ""
 - "Corresponding Author"
 - ""
-- ""
-- ""
-- ""
-date: "2023-11-15T00:00:00Z"
-doi: "10.1109/JSEN.2023.3321042"
+date: "2024-09-26T00:00:00Z"
+doi: "10.1109/JSEN.2024.3464860"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2023-11-15T00:00:00Z"
+publishDate: "2024-09-26T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -31,25 +31,21 @@ publication_types: ["article-journal"]
 publication: "*IEEE Sensors Journal*"
 publication_short: ""
 
-abstract: Submarine cables are widely laid all over the world. However, they are not completely fixed in practice and are subject to displacement by currents and typhoons. To maintain and repair the submarine cables, it is necessary to detect their positions. Using a remotely operated vehicle (ROV) equipped with magnetometers is a common way for submarine detection. However, as ROVs develop toward electrification and large scale, the interference of electric drives on the magnetometer is significant. Magnetic interference and noise in the environment affect the signals of magnetometers, reducing the accuracy of submarine cable detection. In this article, a two-step method is proposed to reduce the influence of magnetic noise and interference. In the first step, we eliminate magnetic interference based on its correlation with motor speed. In the second step, wavelet transform is used to eliminate environmental magnetic noise. According to the simulation and on-site test, this method can reduce the magnetic interference caused by brushless dc motors and improve the accuracy of magnetic detection and positioning of submarine cables.
+abstract: Underwater acoustic communication networks face unique challenges such as limited bandwidth, long propagation delay, and high error rate. To address these challenges, we propose a source-based disjoint multi-path routing protocol specifically designed for underwater acoustic networks. In this protocol, each data packet is routed based on the cost of relay nodes, which is determined by factors including initial hop count, energy consumption, and packet collision probability. Once the routing paths are established, the path costs are updated dynamically based on the costs of the relay nodes and their associated interference nodes. Simulation results demonstrate that the proposed routing protocol is able to enhance network throughput, reduce end-to-end delay, and increase packet delivery rate. Additionally, sea trials carried out in Zhoushan Archipelogoes, China, have confirmed that the proposed method can effectively reduce packet collisions by considering inter-path data transmission interference in high-load network scenarios. Compared with the single-path approach and non-weighted approach, this approach significantly reduces end-to-end delay and improves overall network throughput and packet delivery rate.
+
 
 
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags:
-- Brushless DC Motor
-- Interference Cancellation
-- Magnetic Noise
-- Remotely Operated Vehicle (ROV)
-- Wavelet Transforms
+
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_doi: 'https://doi.org/10.1109/jsen.2023.3321042'
+
 url_code: ''
 url_dataset: ''
 url_poster: ''
