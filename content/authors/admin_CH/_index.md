@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Shaojian Yang  
+title: 杨劭坚  
 
 # Name pronunciation (optional)
 # name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shaojian
-last_name: Yang
+first_name: 杨劭坚
+last_name: []
 
 # Status emoji
 status:
@@ -17,11 +17,11 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Candidate
+role: 博士研究生
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Zhejiang University
-    url: https://www.zju.edu.cn/english/
+  - name: 浙江大学
+    url: https://www.zju.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include underwater communication, cross-medium communication, distributed acoustic sensing and ocean observation.
