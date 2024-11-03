@@ -1,33 +1,32 @@
 ---
-title: "Design and Implementation of a Long-Term Ship-Monitoring System using Vector Hydrophone"
+title: "Achieving Time Diversity by Using Packet-Repetition Based Scheme in Translational Acoustic-RF Channels"
 authors:
-- Wenkai Zhang
-- Yanbing Fu
+- Yujia He
 - admin
+- Jingyu Qian
 - Jingxuan Li
-- Yan Wei
-- Xingbin Tu
-- Zhenan Zhang
+- Minhao Zhang
 - Fengzhong Qu
+- Yan Wei
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
+
 # Author notes (optional)
 author_notes: 
 - ""
 - ""
+- ""
+- ""
+- ""
+- ""
 - "Corresponding Author"
-- ""
-- ""
-- ""
-- ""
-- ""
 
-date: '2023-12-14T00:00:00Z'
-doi: '10.1109/ICSPCC59353.2023.10400248'
+date: '2024-04-15T00:00:00Z'
+doi: '10.1109/OCEANS51537.2024.10682198'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-01-291T00:00:00Z'
+publishDate: '2024-09-24T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -35,20 +34,16 @@ publishDate: '2024-01-291T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2023 IEEE International Conference on Signal Processing, Communications and Computing (ICSPCC)*
-publication_short: In *ICSPCC 2023*
+publication: In *IEEE/MTS OCEANS 2024 - Singapore*
+publication_short: In *OCEANS 2024 - Singapore*
 
-abstract: In this paper, a long-term ship-monitoring system is designed based on a vector hydrophone. It enables the detection and localization of ships at sea. This system equipped with a vector hydrophone is installed on an ocean buoy or an off-shore platform, and uses a field programmable gate array (FPGA) and a microcontroller as the control cores to automatically collect ocean noise for further analysis. The detection of ship presence or absence is achieved through sound energy calculation using the vector hydrophone signal, followed by a comparison with an adaptive threshold. Additionally, cross spectrum analysis is applied to estimate the direction of arrival (DOA) of the ship. The system's performance is evaluated through simulations and sea trials. Their results demonstrates its capability of target detection and DOA estimation. This study is expected to meet the practical requirements for intelligent ocean monitoring applications.
+abstract: Recently, cross-medium communication combining acoustic wave and millimeter wave has gained more and more attention because it provides a direct communication method from underwater to above water without the need for relays. Presently, the feasibility of this method in short-distance communication has been verified. However, when extending to long-distance communication, the reduction in signal-to-noise ratio (SNR) due to the attenuation of sound and electromagnetic waves will present a challenge to the performance of communication. This paper proposes a packet-repetition-based scheme to achieve time diversity. Experimental results demonstrate that the pro-posed scheme effectively reduces the average bit error rate in translational acoustic-radio frequency channels.
 
 
 # Summary. An optional shortened abstract.
 # summary:  Our findings reveal the successful establishment of a direct acoustic communication link between the water and air interface, achieving a data rate of 4.565 kbps.
 
-tags: 
-- Vector Hydrophone
-- Direction of Arrival
-- Target Detection
-- Ship Monitoring
+tags: []
 
 # Display this page in the Featured widget?
 featured: false
