@@ -36,7 +36,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *2023 IEEE International Conference on Signal Processing, Communications and Computing (ICSPCC)*
-publication_short: In *ICSPCC 2023*
+publication_short: In *ICSPCC 2023* - Zhengzhou, China
 
 abstract: In this paper, a long-term ship-monitoring system is designed based on a vector hydrophone. It enables the detection and localization of ships at sea. This system equipped with a vector hydrophone is installed on an ocean buoy or an off-shore platform, and uses a field programmable gate array (FPGA) and a microcontroller as the control cores to automatically collect ocean noise for further analysis. The detection of ship presence or absence is achieved through sound energy calculation using the vector hydrophone signal, followed by a comparison with an adaptive threshold. Additionally, cross spectrum analysis is applied to estimate the direction of arrival (DOA) of the ship. The system's performance is evaluated through simulations and sea trials. Their results demonstrates its capability of target detection and DOA estimation. This study is expected to meet the practical requirements for intelligent ocean monitoring applications.
 

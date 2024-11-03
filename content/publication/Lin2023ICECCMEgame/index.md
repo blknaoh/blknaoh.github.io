@@ -36,7 +36,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *2023 3rd International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)*
-publication_short: In *ICECCME 2023*
+publication_short: In *ICECCME 2023* - Tenerife, Canary Islands, Spain
 
 abstract: Mobile edge computing has an excellent performance in reducing delay and improving system reliability. Nevertheless, relatively few studies have been conducted concerning ocean edge computing. Due to the limited communication and computing power in the ocean environment, an improper offloading policy easily leads to wastage of resources. To address this problem, we propose a master-slave mobile edge computing (MEC) server offloading strategy for ocean edge computing based on game theory. The game theory algorithm has low complexity and good effect, which is suitable for the relatively small decision-making model scenario in this paper. A system model for the offloading strategy in ocean edge computing is established, considering the communication interruption problem of the Ocean Internet of Things caused by the current scarcity of computing power resources in the ocean. According to the game theory, we solve the offloading strategy between the autonomous underwater vehicle (AUV) and the primary MEC server. And the optimization performance index is based on minimizing delay and energy loss. The simulation results verify the effectiveness of the algorithm, and demonstrate the superior performance of the offloading strategy based on game theory compared with other mainstream methods.
 

@@ -34,8 +34,8 @@ publishDate: '2024-09-24T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE/MTS OCEANS 2024 - Singapore*
-publication_short: In *OCEANS 2024 - Singapore*
+publication: In *MTS/IEEE OCEANS 2024* - Singapore
+publication_short: In *OCEANS 2024* - Singapore
 
 abstract: Recently, cross-medium communication combining acoustic wave and millimeter wave has gained more and more attention because it provides a direct communication method from underwater to above water without the need for relays. Presently, the feasibility of this method in short-distance communication has been verified. However, when extending to long-distance communication, the reduction in signal-to-noise ratio (SNR) due to the attenuation of sound and electromagnetic waves will present a challenge to the performance of communication. This paper proposes a packet-repetition-based scheme to achieve time diversity. Experimental results demonstrate that the pro-posed scheme effectively reduces the average bit error rate in translational acoustic-radio frequency channels.
 

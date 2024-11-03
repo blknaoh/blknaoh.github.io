@@ -1,13 +1,12 @@
 ---
-title: "Source-based Disjoint Multi-path Routing Protocol for Underwater Acoustic Networks"
+title: "Adaptive Modulation and Coding for Underwater Acoustic Communication Based on Neural Networks"
 authors:
-- Tingwei Lou
-- admin
+- Jixing Zheng
 - Yu Yuan
-- Xiaoxiao Zhuo
-- Yufan Yuan
 - Yan Wei
 - Xingbin Tu
+- Xuesong Lu
+- admin
 - Fengzhong Qu
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -16,18 +15,18 @@ authors:
 # Author notes (optional)
 author_notes: 
 - ""
+- ""
 - "Corresponding Author"
 - ""
 - ""
 - ""
 - ""
 - ""
-- ""
-date: '2023-11-24T00:00:00Z'
-doi: '10.1109/ICRAIC61978.2023.00012'
+date: '2023-11-14T00:00:00Z'
+doi: '10.1109/ICSPCC59353.2023.10400355'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-04-11T00:00:00Z'
+publishDate: '2024-01-29T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -35,10 +34,11 @@ publishDate: '2024-04-11T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2023 3rd International Conference on Robotics, Automation and Intelligent Control (ICRAIC)*
-publication_short: In *ICRAIC 2023* - Zhangjiajie, China
+publication: In *2023 IEEE International Conference on Signal Processing, Communications and Computing (ICSPCC)*
+publication_short: In *ICSPCC 2023* - Zhhengzhou, China
 
-abstract: As acoustic communication environment is characterized by limited bandwidth, long propagation delay and high bit error rate, different routing protocols have been proposed to address these issues. In this paper, we propose a source-based disjoint multi-path routing protocol for underwater acoustic communication networks. In this protocol, each data packet is routed by the relay node's cost, which is determined by the initial hop count, the energy consumption, and the packet collision probability. Once the routing path is determined, the path cost will be updated based on the cost of relay nodes and related interference nodes. Through simulation, we demonstrate that the proposed routing protocol significantly improves network throughput, reduces end-to-end delay, and increases packet delivery rate.
+abstract: Due to the complexity and variability of the marine environment, the modulation and coding schemes used in underwater acoustic communication do not match the actual channel, which can lead to a decrease in communication accuracy or an increase in power consumption. Therefore, adaptive modulation and coding in underwater acoustic communication is very necessary to improve communication throughput. In this paper, we propose a neural network-based adaptive modulation and coding method for underwater acoustic communication. Firstly, we conduct channel modeling to generate diverse channels. Next, we simulate the error rate of different modulation and coding schemes under different channel conditions, and obtain a dataset with each channel corresponding to an optimal modulation and coding scheme. Finally, we use the obtained data set for training, and compare the improved neural network model proposed in this paper with four mainstream models for analysis. The simulation results show the improved neural network has optimized performance on the test set and can find better modulation and coding schemes based on channel characteristics.
+
 
 
 # Summary. An optional shortened abstract.

@@ -35,7 +35,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *2023 3rd International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)*
-publication_short: In *ICECCME 2023*
+publication_short: In *ICECCME 2023* - Tenerife, Canary Islands, Spain
 
 abstract: Accurate ranging between underwater communication nodes and reliable underwater acoustic communication technology are indispensable for large-scale oceanic studies. Effectively combining ranging and communication methods and applying them in underwater acoustic modems is an attractive strategy worth studying. To meet these requirements, we propose an asynchronous time delay estimation (ATDE) for accurate ranging. The ATDE exploits the Linear Frequency Modulated (LFM) waveform, which is originally used for synchronization of communication signals, to enable the modem to function as an Integrated Communication and Ranging System (ICRS). An adaptive retransmission algorithm is put forward to improve the reliability of communication based on the range and signal to noise ratio (SNR) obtained from ATDE. Extensive simulations are conducted to verify the feasibility of the proposed ranging method and the superiority of the retransmission algorithm in terms of throughput and false packet rate when compared with the conventional method. A preliminary field experiment is conducted near Zhairuoshan Island in Zhoushan Archipelagoes, Zhejiang Province, China, using self-developed modems. Both the simulation and experimental results demonstrate that the proposed scheme has robust ranging ability and offers more reliable data transmission in underwater acoustic communication.
 

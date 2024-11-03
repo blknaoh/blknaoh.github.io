@@ -1,12 +1,12 @@
 ---
-title: "Source-based Disjoint Multi-path Routing Protocol for Underwater Acoustic Networks"
+title: "An Offloading Strategy for Ocean Edge Computing Based on Whale Optimization Algorithm"
 authors:
-- Tingwei Lou
-- admin
-- Yu Yuan
-- Xiaoxiao Zhuo
-- Yufan Yuan
+- Shan Lin
+- Chengwei Zhu
 - Yan Wei
+- admin
+- Jianzhang Liu
+- Yufan Yuan
 - Xingbin Tu
 - Fengzhong Qu
 # Authors
@@ -16,18 +16,18 @@ authors:
 # Author notes (optional)
 author_notes: 
 - ""
+- ""
 - "Corresponding Author"
 - ""
 - ""
 - ""
 - ""
 - ""
-- ""
-date: '2023-11-24T00:00:00Z'
-doi: '10.1109/ICRAIC61978.2023.00012'
+date: '2023-07-19T00:00:00Z'
+doi: '10.1109/ICECCME57830.2023.10252368'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-04-11T00:00:00Z'
+publishDate: '2023-09-22T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -35,10 +35,10 @@ publishDate: '2024-04-11T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2023 3rd International Conference on Robotics, Automation and Intelligent Control (ICRAIC)*
-publication_short: In *ICRAIC 2023* - Zhangjiajie, China
+publication: In *2023 3rd International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)*
+publication_short: In *ICECCME 2023* - Tenerife, Canary Islands, Spain
 
-abstract: As acoustic communication environment is characterized by limited bandwidth, long propagation delay and high bit error rate, different routing protocols have been proposed to address these issues. In this paper, we propose a source-based disjoint multi-path routing protocol for underwater acoustic communication networks. In this protocol, each data packet is routed by the relay node's cost, which is determined by the initial hop count, the energy consumption, and the packet collision probability. Once the routing path is determined, the path cost will be updated based on the cost of relay nodes and related interference nodes. Through simulation, we demonstrate that the proposed routing protocol significantly improves network throughput, reduces end-to-end delay, and increases packet delivery rate.
+abstract: The ocean environment is characterized by its volatility and hostility, making data transmission underwater difficult. The introduction of edge computing offers a mitigation solution by moving computing power closer to the data sources, reducing the cost of data transmission. In the field of edge computing, offloading computing tasks have long been challenging, especially in the ocean environment. Therefore, in this paper, we propose a specific edge computing offloading strategy to address the computational challenges in the ocean environment. Subsequently, we apply the whale optimization algorithm (WOA) to tackle the data offloading issue between underwater sensors and autonomous underwater vehicles (AUVs). In this process, optimization performance is evaluated in terms of minimizing latency and energy loss. Our simulation results validate the feasibility of the offloading strategy based on whale optimization algorithm and also demonstrate the lowest overall integrated energy consumption of the system compared with other mainstream methods. Considering the extremely low consumption of the algorithm, the WOA is believed to be a promising method of offloading strategy for ocean edge computing.
 
 
 # Summary. An optional shortened abstract.

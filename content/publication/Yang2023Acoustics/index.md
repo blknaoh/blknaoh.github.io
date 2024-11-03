@@ -25,11 +25,11 @@ publishDate: '2023-10-01T00:00:00Z'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ['presentation']
 
 # Publication name and optional abbreviated publication name.
 publication: In *185th Meeting of the Acoustical Society of America*
-publication_short: In *Acoustics 2023 Sydney*
+publication_short: In *Acoustics 2023* - Sydney, Australia*
 
 abstract: Direct acoustic communication between underwater and airborne nodes has always been considered unfeasible due to the energy loss caused by the strong surface reflection of sound waves. However, contrary to popular belief, our study demonstrates that underwater transducers can effectively transmit detectable acoustic signals in the air. To investigate this phenomenon, we conducted an experiment involving the deployment of an underwater transducer at a depth of 1 m, while an unoccupied aerial vehicle equipped with a voice recorder was positioned at various altitudes ranging from 2 to 30 m and horizontal distances of 0–30 m. Sound pressure levels were measured at 20 different positions within the frequency range of 10–20kHz, and orthogonal frequency division multiplex acoustic communication signals were recorded at specific positions. Our findings reveal the successful establishment of a direct acoustic communication link between the water and air interface, achieving a data rate of 4.565 kbps. This study opens up new possibilities for practical applications in underwater-to-air communication systems.
 
