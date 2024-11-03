@@ -6,7 +6,7 @@ title: 'Doubly-spread channel equalization based on channel shortening in mobile
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Xingbin Tu
-  - Shaojian Yang
+  - admin
   - Jie Xi
   - Yulin Jiang
   - Yan Wei
