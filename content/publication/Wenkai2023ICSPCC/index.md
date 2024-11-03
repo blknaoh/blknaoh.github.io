@@ -23,7 +23,7 @@ author_notes:
 - ""
 - ""
 
-date: '2023-12-14T00:00:00Z'
+date: '2023-11-14T00:00:00Z'
 doi: '10.1109/ICSPCC59353.2023.10400248'
 
 # Schedule page publish date (NOT publication's date).
