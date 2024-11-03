@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Ethan Shaojian Yang  
+title: Shaojian Yang  
 
 # Name pronunciation (optional)
 # name_pronunciation: Chien Shiung Wu
