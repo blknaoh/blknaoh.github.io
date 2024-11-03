@@ -1,11 +1,13 @@
 ---
-title: "Doubly-Spread Channel Equalization based on Channel Shortening in Underwater Distributed Acoustic Sensing Communications"
+title: "Source-based Disjoint Multi-path Routing Protocol for Underwater Acoustic Networks"
 authors:
-- Xingbin Tu
+- Tingwei Lou
 - admin
-- Jie Xi
-- Yulin Jiang
+- Yu Yuan
+- Xiaoxiao Zhuo
+- Yufan Yuan
 - Yan Wei
+- Xingbin Tu
 - Fengzhong Qu
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -13,17 +15,19 @@ authors:
 
 # Author notes (optional)
 author_notes: 
+- ""
 - "Corresponding Author"
 - ""
 - ""
 - ""
 - ""
 - ""
-date: '2023-08-10T00:00:00Z'
-doi: '10.1109/ICCC57788.2023.10233469'
+- ""
+date: '2023-11-24T00:00:00Z'
+doi: '10.1109/ICRAIC61978.2023.00012'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2023-09-05T00:00:00Z'
+publishDate: '2024-04-11T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -31,11 +35,10 @@ publishDate: '2023-09-05T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *2023 IEEE/CIC International Conference on Communications in China (ICCC)*
-publication_short: In *ICCC 2023*
+publication: In *2023 3rd International Conference on Robotics, Automation and Intelligent Control (ICRAIC)*
+publication_short: In *ICRAIC 2023*
 
-abstract: Distributed acoustic sensing (DAS) using submarine optical cables is a new marine technology for large-scale underwater data transmission and data collection of autonomous underwater vehicles (AUVs). However, the shallow water surroundings and the mobility of AUVs cause severe multipath propagation and Doppler effect, resulting in sound signal distortion in the delay and Doppler domains when sound waves reach the submarine optical cable. In this paper, we propose an underwater acoustic equalization method based on channel shortening to mitigate these issues. We use frequency-domain decision feedback equalization (FD-DFE) for channel shortening to suppress multipaths and lower the Doppler spread of the channel, followed by time-domain decision feedback equalization based on recursive least square (RLS-DFE) to eliminate residual delay and Doppler spreads. This dual decision feedback equalization (DDFE) approach combines block- and symbol-wise equalization and demonstrates robustness through numerical simulations. In the reservoir experiment, the DDFE method increased the output signal-to-noise ratio by an average 4.5 dB compared to the traditional method for medium-rate communications at 3 kbps, and reduced the bit error rate by 60%.
-
+abstract: As acoustic communication environment is characterized by limited bandwidth, long propagation delay and high bit error rate, different routing protocols have been proposed to address these issues. In this paper, we propose a source-based disjoint multi-path routing protocol for underwater acoustic communication networks. In this protocol, each data packet is routed by the relay node's cost, which is determined by the initial hop count, the energy consumption, and the packet collision probability. Once the routing path is determined, the path cost will be updated based on the cost of relay nodes and related interference nodes. Through simulation, we demonstrate that the proposed routing protocol significantly improves network throughput, reduces end-to-end delay, and increases packet delivery rate.
 
 
 # Summary. An optional shortened abstract.
