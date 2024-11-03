@@ -234,8 +234,7 @@ sections:
     content:
       title: Contact
       subtitle:
-      text: |-
-         If you have any suggestions or needs, please leave your contact information.
+      text: 
       # Contact (add or remove contact options as necessary)
       email: sjyang@zju.edu.cn
       phone: +86 138 5995 0256
