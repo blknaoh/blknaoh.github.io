@@ -17,7 +17,7 @@ author_notes:
 - ""
 - ""
 date: "2023-11-15T00:00:00Z"
-doi: ""
+doi: "10.1109/JSEN.2023.3321042"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-11-15T00:00:00Z"
