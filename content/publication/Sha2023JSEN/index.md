@@ -28,7 +28,7 @@ publishDate: "2023-11-15T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*IEEE Sensors Journal*, 21(21)"
+publication: "*IEEE Sensors Journal*"
 publication_short: ""
 
 abstract: Submarine cables are widely laid all over the world. However, they are not completely fixed in practice and are subject to displacement by currents and typhoons. To maintain and repair the submarine cables, it is necessary to detect their positions. Using a remotely operated vehicle (ROV) equipped with magnetometers is a common way for submarine detection. However, as ROVs develop toward electrification and large scale, the interference of electric drives on the magnetometer is significant. Magnetic interference and noise in the environment affect the signals of magnetometers, reducing the accuracy of submarine cable detection. In this article, a two-step method is proposed to reduce the influence of magnetic noise and interference. In the first step, we eliminate magnetic interference based on its correlation with motor speed. In the second step, wavelet transform is used to eliminate environmental magnetic noise. According to the simulation and on-site test, this method can reduce the magnetic interference caused by brushless dc motors and improve the accuracy of magnetic detection and positioning of submarine cables.
@@ -60,10 +60,6 @@ url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
-  focal_point: ""
-  preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
