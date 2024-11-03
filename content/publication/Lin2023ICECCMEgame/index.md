@@ -1,12 +1,13 @@
 ---
-title: "Adaptive Retransmission Scheme for Underwater Acoustic Nodes Based on Distance Ranging"
+title: "An Offloading Strategy for Ocean Edge Computing Based on Game Theory"
 authors:
-- Ximing Chen
-- Yanbing Fu
-- Xingbin Tu
+- Shan Lin
+- Yu Yuan
 - Yan Wei
 - admin
-- Zhipeng Li
+- Jianzhang Liu
+- Yufan Yuan
+- Xingbin Tu
 - Fengzhong Qu
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -21,9 +22,9 @@ author_notes:
 - ""
 - ""
 - ""
-
+- ""
 date: '2023-07-19T00:00:00Z'
-doi: '10.1109/ICECCME57830.2023.10253189'
+doi: '10.1109/ICECCME57830.2023.10252849'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2023-09-22T00:00:00Z'
@@ -37,7 +38,7 @@ publication_types: ['paper-conference']
 publication: In *2023 3rd International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)*
 publication_short: In *ICECCME 2023*
 
-abstract: Accurate ranging between underwater communication nodes and reliable underwater acoustic communication technology are indispensable for large-scale oceanic studies. Effectively combining ranging and communication methods and applying them in underwater acoustic modems is an attractive strategy worth studying. To meet these requirements, we propose an asynchronous time delay estimation (ATDE) for accurate ranging. The ATDE exploits the Linear Frequency Modulated (LFM) waveform, which is originally used for synchronization of communication signals, to enable the modem to function as an Integrated Communication and Ranging System (ICRS). An adaptive retransmission algorithm is put forward to improve the reliability of communication based on the range and signal to noise ratio (SNR) obtained from ATDE. Extensive simulations are conducted to verify the feasibility of the proposed ranging method and the superiority of the retransmission algorithm in terms of throughput and false packet rate when compared with the conventional method. A preliminary field experiment is conducted near Zhairuoshan Island in Zhoushan Archipelagoes, Zhejiang Province, China, using self-developed modems. Both the simulation and experimental results demonstrate that the proposed scheme has robust ranging ability and offers more reliable data transmission in underwater acoustic communication.
+abstract: Mobile edge computing has an excellent performance in reducing delay and improving system reliability. Nevertheless, relatively few studies have been conducted concerning ocean edge computing. Due to the limited communication and computing power in the ocean environment, an improper offloading policy easily leads to wastage of resources. To address this problem, we propose a master-slave mobile edge computing (MEC) server offloading strategy for ocean edge computing based on game theory. The game theory algorithm has low complexity and good effect, which is suitable for the relatively small decision-making model scenario in this paper. A system model for the offloading strategy in ocean edge computing is established, considering the communication interruption problem of the Ocean Internet of Things caused by the current scarcity of computing power resources in the ocean. According to the game theory, we solve the offloading strategy between the autonomous underwater vehicle (AUV) and the primary MEC server. And the optimization performance index is based on minimizing delay and energy loss. The simulation results verify the effectiveness of the algorithm, and demonstrate the superior performance of the offloading strategy based on game theory compared with other mainstream methods.
 
 
 # Summary. An optional shortened abstract.
