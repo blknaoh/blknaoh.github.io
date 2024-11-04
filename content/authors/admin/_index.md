@@ -24,13 +24,12 @@ organizations:
     url: https://www.zju.edu.cn/english/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include underwater communication, cross-medium communication, distributed acoustic sensing and ocean observation.
+bio: My research interests include underwater communications, distributed acoustic sensing and ocean Internet of Things.
 
 # Interests to show in About widget
 interests:
-  - Underwater Communication 
-  - Cross-medium Communication
-  - Ocean Observation
+  - Underwater Communications 
+  - Ocean Internet of Things
   - Distributed Acoustic Sensing
 
 # Education to show in About widget
@@ -65,8 +64,8 @@ social:
 highlight_name: true
 ---
 
-Ethan Shaojian Yang (杨劭坚) was born in Zhangzhou, Fujian, China, in 1997, where he spent his childhood and the first five years of primary school. In the summer of 2008, he moved to Xiamen, Fujian, China, where he completed his final year of primary school and six years of secondary school. He received his B.Eng. degree in telecommunication engineering from Tiangong University, Tianjin, China, in 2019. He is currently pursuing his Ph.D. degree in ocean technology and engineering with the Ocean College, Zhejiang University, Zhoushan, China, under the supervision of Professor Fengzhong Qu and co-supervision of Professor Yan Wei. His research interests include underwater communications, cross-medium communication, distributed acoustic sensing, and ocean observation.
+Ethan Shaojian Yang (杨劭坚) was born in Zhangzhou, China, in 1997, where he spent his childhood and the first five years of primary school. In the summer of 2008, he moved to Xiamen, China, where he completed his final year of primary school and six years of secondary school. He received his B.Eng. degree in telecommunication engineering from Tiangong University, Tianjin, China, in 2019. He is currently pursuing his Ph.D. degree in ocean technology and engineering with the Ocean College, Zhejiang University, Zhoushan, China, under the supervision of Professor Fengzhong Qu (瞿逢重) and co-supervision of Professor Yan Wei (魏艳). His research interests include underwater communications, distributed acoustic sensing, and ocean Internet of Things. Ethan is also a member of IEEE.
 
-Ethan chose the name "Ethan" for informal and personal use, though "Shaojian Yang" is used in formal documents. Outside of academia, he enjoys traveling, reading, and connecting with people from diverse backgrounds. He has lived in or visited 64 cities across 23 of China's 34 provincial-level regions and has also traveled to Japan and Australia.
+Ethan chose the name "Ethan" himself and uses "Shaojian Yang" in formal documents. Outside of academia, he enjoys traveling, reading, and connecting with people from diverse backgrounds. He has lived in or visited 64 cities across China and has also had opportunities to travel to Japan and Australia for academic conferences.
 
 {style="text-align: justify;"}
