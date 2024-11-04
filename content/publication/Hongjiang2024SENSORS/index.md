@@ -1,23 +1,21 @@
 ---
-title: 'ME-Net: A Network for Scale-Variant Objects in Harsh Underwater Detection Scenes'
+title: 'An Underwater Multipath Channel Azimuth Estimation Method Based on Sweep-Spread Carrier'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Haodi Zhu
+  - Hongjiang Chen
+  - Zhipeng Li
   - admin
-  - Yan Wei
-  - Wenchu Wang
-  - Xinyi Zhou
+  - Xingbin Tu
   - Fengzhong Qu
 # Author notes (optional)
 author_notes: 
   - ''
+  - ''
+  - ''
   - 'Corresponding Author'
-  - ''
-  - ''
-  - ''
   - ''
 
 date: '2024-10-20T00:00:00Z'
@@ -35,7 +33,8 @@ publication_types: ['paper-conference']
 publication: In *IEEE SENSORS 2024* - Kobe, Japan
 # publication_short: 
 
-abstract: Underwater object recognition is a key technology in the field of underwater exploration. However, current underwater imaging tasks often face significant object scale variation under severe quality degradation. This paper proposes MENet, a salient object detection network that fuses information from multi-scale effective receptive fields (ERF) for scale-variant objects in underwater scenes. Specifically, we design an ERFServer module to dynamically adjust ERF in the fusion phase, enabling enhanced multi-scale features across multi-resolution semantics interactions. Our network with refined ERF and resolution features utilizes both global and local information more comprehensively and better adapts to scale variations of underwater objects. Experiments on underwater image datasets UFO-120 and MAS3K demonstrate that the proposed method outperforms other state-of-the-art underwater image methods.
+abstract: Underwater acoustic localization plays an important role in marine explorations. However, the complex shallow-sea environment induces the multipath reflection which severely interfere the localization accuracy. To suppress the multipath reflection induced interference and improve the estimation accuracy, we propose a method which based on circular sensor array. By using a uniform circular receiving array, the method estimate the target’s azimuth through sweep-spread carrier (S2C) algorithm. To mitigate azimuth estimation distortion caused by array arrangement errors, we employ an array calibration method. The lake experiment results have verified our proposed method, leading to an average 64.7% error reduction in the azimuth estimation when compared with traditional method. 
+
 
 
 # Summary. An optional shortened abstract.
