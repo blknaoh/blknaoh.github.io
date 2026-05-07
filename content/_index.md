@@ -247,8 +247,8 @@ sections:
         country_code: CN
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '30.26'
-        longitude: '120.30'  
+        latitude: '30.263'
+        longitude: '120.299'  
       # Automatically link email and phone or display as text?
       autolink: true    
     design:
