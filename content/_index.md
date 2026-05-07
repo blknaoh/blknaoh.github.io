@@ -239,16 +239,16 @@ sections:
       email: sjyang@zju.edu.cn
       phone: +86 138 5995 0256
       address:
-        street: Office 109 Zhihai Building, 1 Zheda Rd.
-        city: Zhoushan
+        street: A08-520, 2118 Pinglan Rd.
+        city: Hangzhou
         region: Zhejiang
-        postcode: '316021'
+        postcode: '311215'
         country: China
         country_code: CN
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '30.00'
-        longitude: '122.16'  
+        latitude: '30.26'
+        longitude: '120.30'  
       # Automatically link email and phone or display as text?
       autolink: true    
     design:
