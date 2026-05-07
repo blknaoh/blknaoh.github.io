@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Candidate
+role: Assistant Research Fellow / Postdoctoral Fellow
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Zhejiang University
