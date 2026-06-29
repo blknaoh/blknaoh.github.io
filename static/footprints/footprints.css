@@ -183,13 +183,12 @@ body.footprints-page {
 .fp-toolbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 14px;
   padding: 12px;
   border-bottom: 1px solid var(--fp-border);
 }
 
-.fp-segments,
 .fp-actions {
   display: flex;
   flex-wrap: wrap;
@@ -250,7 +249,11 @@ body.footprints-page {
 }
 
 .fp-dot.country {
-  background: var(--fp-accent);
+  background: transparent;
+  border-color: var(--fp-accent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--fp-accent) 24%, transparent),
+    0 0 10px color-mix(in srgb, var(--fp-accent) 58%, transparent);
 }
 
 .fp-dot.city {
@@ -264,6 +267,12 @@ body.footprints-page {
 .leaflet-container {
   background: #e9f0f3;
   font-family: inherit;
+}
+
+.fp-country-outline {
+  filter:
+    drop-shadow(0 0 3px color-mix(in srgb, var(--fp-country-glow, #c75d43) 72%, transparent))
+    drop-shadow(0 0 10px color-mix(in srgb, var(--fp-country-glow, #c75d43) 42%, transparent));
 }
 
 .leaflet-tooltip.fp-map-tooltip {

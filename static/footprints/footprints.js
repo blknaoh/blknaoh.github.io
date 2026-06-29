@@ -108,19 +108,25 @@
   const attribution = L.control.attribution({ prefix: false }).addTo(map);
   attribution.addAttribution('Boundaries: <a href="https://github.com/topojson/world-atlas">world-atlas</a>, <a href="https://datav.aliyun.com/portal/school/atlas/area_selector">Aliyun DataV</a>, <a href="https://www.geoboundaries.org/">geoBoundaries</a>');
 
+  const countryOutlinePane = map.createPane("countryOutlinePane");
+  if (countryOutlinePane) {
+    countryOutlinePane.style.zIndex = 430;
+    countryOutlinePane.style.pointerEvents = "none";
+  }
+
   const layers = {
-    world: L.layerGroup(),
-    foreignCities: L.layerGroup(),
-    chinaBase: L.layerGroup(),
-    china: L.layerGroup(),
-    districts: L.layerGroup()
+    world: L.layerGroup().addTo(map),
+    foreignCities: L.layerGroup().addTo(map),
+    chinaBase: L.layerGroup().addTo(map),
+    china: L.layerGroup().addTo(map),
+    districts: L.layerGroup().addTo(map)
   };
   const bounds = {
+    all: L.latLngBounds([]),
     world: L.latLngBounds([]),
     china: L.latLngBounds([])
   };
   const cityById = new Map(data.cities.map((city) => [city.id, city]));
-  let activeScope = "china";
 
   function localName(item) {
     return page === "zh" ? item.name : item.nameEn || item.name;
@@ -186,7 +192,10 @@
   function featureBounds(layer, scope) {
     try {
       const layerBounds = layer.getBounds();
-      if (layerBounds && layerBounds.isValid()) bounds[scope].extend(layerBounds);
+      if (layerBounds && layerBounds.isValid()) {
+        bounds.all.extend(layerBounds);
+        if (scope && bounds[scope]) bounds[scope].extend(layerBounds);
+      }
     } catch (_error) {
       // Some remote geometries may be empty; ignore them.
     }
@@ -201,10 +210,7 @@
     });
     layer.on({
       mouseover: () => {
-        layer.setStyle({
-          weight: 1.8,
-          fillOpacity: 0.72
-        });
+        layer.setStyle(hoverStyle(item));
         layer.openTooltip();
       },
       mouseout: () => {
@@ -226,13 +232,40 @@
   }
 
   function visitedStyle(item) {
+    if (item.kind === "country") return countryOutlineStyle(item);
     const color = colorForItem(item);
     return {
       color,
       weight: 1.2,
       fillColor: color,
-      fillOpacity: item.kind === "country" ? 0.42 : 0.56,
+      fillOpacity: 0.56,
       opacity: 1
+    };
+  }
+
+  function countryOutlineStyle(item) {
+    const color = colorForItem(item);
+    return {
+      className: "fp-country-outline",
+      color,
+      weight: 2.2,
+      fill: false,
+      opacity: 0.96,
+      interactive: false
+    };
+  }
+
+  function hoverStyle(item) {
+    if (item.kind === "country") {
+      return {
+        ...countryOutlineStyle(item),
+        weight: 3,
+        opacity: 1
+      };
+    }
+    return {
+      weight: 1.8,
+      fillOpacity: 0.72
     };
   }
 
@@ -252,6 +285,8 @@
         const countries = topojson.feature(topology, topology.objects.countries);
         L.geoJSON(countries, {
           filter: (feature) => countryByIso.has(String(feature.id).padStart(3, "0")),
+          pane: "countryOutlinePane",
+          interactive: false,
           style: (feature) => {
             const item = countryByIso.get(String(feature.id).padStart(3, "0"));
             return visitedStyle(item);
@@ -259,7 +294,12 @@
           onEachFeature: (feature, layer) => {
             featureBounds(layer, "world");
             const item = countryByIso.get(String(feature.id).padStart(3, "0"));
-            bindVisitedFeature(layer, item);
+            layer.on("add", () => {
+              const element = layer.getElement && layer.getElement();
+              if (!element) return;
+              const color = colorForItem(item);
+              element.style.setProperty("--fp-country-glow", color);
+            });
           }
         }).addTo(layers.world);
       })
@@ -382,40 +422,9 @@
     return Promise.all(tasks);
   }
 
-  function setScope(scope) {
-    activeScope = scope;
-    document.querySelectorAll("[data-scope]").forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.scope === scope));
-    });
-
-    if (scope === "china") {
-      if (map.hasLayer(layers.world)) map.removeLayer(layers.world);
-      if (map.hasLayer(layers.foreignCities)) map.removeLayer(layers.foreignCities);
-      if (!map.hasLayer(layers.chinaBase)) map.addLayer(layers.chinaBase);
-      if (!map.hasLayer(layers.china)) map.addLayer(layers.china);
-      if (!map.hasLayer(layers.districts)) map.addLayer(layers.districts);
-      fitChina();
-    } else {
-      if (!map.hasLayer(layers.world)) map.addLayer(layers.world);
-      if (!map.hasLayer(layers.foreignCities)) map.addLayer(layers.foreignCities);
-      if (map.hasLayer(layers.chinaBase)) map.removeLayer(layers.chinaBase);
-      if (map.hasLayer(layers.china)) map.removeLayer(layers.china);
-      if (map.hasLayer(layers.districts)) map.removeLayer(layers.districts);
-      fitWorld();
-    }
-  }
-
-  function fitWorld() {
-    if (bounds.world.isValid()) {
-      map.fitBounds(bounds.world.pad(0.02), { padding: [18, 18], animate: false });
-    } else {
-      map.setView([20, 80], 2);
-    }
-  }
-
-  function fitChina() {
-    if (bounds.china.isValid()) {
-      map.fitBounds(bounds.china.pad(0.04), { padding: [18, 18], animate: false });
+  function fitAll() {
+    if (bounds.all.isValid()) {
+      map.fitBounds(bounds.all.pad(0.04), { padding: [18, 18], animate: false });
     } else {
       map.fitBounds(chinaBounds, { padding: [18, 18], animate: false });
     }
@@ -451,34 +460,19 @@
     node.setAttribute("aria-label", `${count} ${label}: ${value}`);
   }
 
-  document.querySelectorAll("[data-scope]").forEach((button) => {
-    button.addEventListener("click", () => setScope(button.dataset.scope));
-  });
-
   const fitButton = document.querySelector("[data-action='fit']");
   if (fitButton) {
-    fitButton.addEventListener("click", () => {
-      if (activeScope === "china") fitChina();
-      else fitWorld();
-    });
+    fitButton.addEventListener("click", fitAll);
   }
 
   setStats();
   map.setView([24, 102], 3);
-  setScope(activeScope);
 
   Promise.all([
     renderWorld(),
-    renderForeignCityAreas()
-  ]).then(() => {
-    if (activeScope === "world") fitWorld();
-  });
-
-  Promise.all([
+    renderForeignCityAreas(),
     renderChinaBase(),
     renderChinaVisitedAreas(),
     renderDistrictRecords()
-  ]).then(() => {
-    if (activeScope === "china") fitChina();
-  });
+  ]).then(fitAll);
 })();
