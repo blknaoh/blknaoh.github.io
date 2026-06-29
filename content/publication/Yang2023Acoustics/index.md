@@ -39,7 +39,7 @@ summary:  Our findings reveal the successful establishment of a direct acoustic 
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
