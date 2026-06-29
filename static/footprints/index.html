@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Footprints | Shaojian Yang</title>
+    <meta name="description" content="An interactive footprint map of places visited by Shaojian Yang.">
+    <link rel="canonical" href="https://www.sjyang.top/footprints/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="/footprints/footprints.css">
+  </head>
+  <body class="footprints-page" data-lang="en">
+    <header class="fp-topbar">
+      <nav class="fp-shell fp-nav" aria-label="Primary">
+        <a class="fp-brand" href="/">Shaojian Yang</a>
+        <div class="fp-navlinks">
+          <a href="/#about">Home</a>
+          <a href="/#posts">Posts</a>
+          <a href="/#featured">Publications</a>
+          <a href="/footprints/" aria-current="page">Footprints</a>
+          <a href="/#contact">Contact</a>
+          <a href="/zh/footprints/">中文</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="fp-main">
+      <section class="fp-shell fp-header">
+        <div>
+          <h1 class="fp-title">Footprints</h1>
+          <p class="fp-subtitle">A zoomable flat footprint map, colored by visited countries/regions and city-level administrative areas where boundaries are available, with room for future photos and district-level records.</p>
+        </div>
+        <div class="fp-stats" aria-label="Footprint statistics">
+          <div class="fp-stat">
+            <strong id="fp-country-count">-</strong>
+            <span>Countries/regions</span>
+          </div>
+          <div class="fp-stat">
+            <strong id="fp-city-count">-</strong>
+            <span>City-level areas</span>
+          </div>
+          <div class="fp-stat">
+            <strong id="fp-district-count">-</strong>
+            <span>Districts</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="fp-shell fp-board" aria-label="Interactive footprint map">
+        <div class="fp-toolbar">
+          <div class="fp-segments" aria-label="Map scope">
+            <button class="fp-control" type="button" data-scope="world" aria-pressed="true">World</button>
+            <button class="fp-control" type="button" data-scope="china" aria-pressed="false">China</button>
+          </div>
+          <div class="fp-actions">
+            <button class="fp-control" type="button" data-action="fit">All footprints</button>
+          </div>
+        </div>
+        <div id="footprints-map" role="application" aria-label="Zoomable footprint map"></div>
+        <div class="fp-legend" aria-label="Map legend">
+          <span class="fp-legend-item"><span class="fp-dot country"></span>Visited country/region</span>
+          <span class="fp-legend-item"><span class="fp-dot city"></span>Visited city-level area</span>
+          <span class="fp-legend-item"><span class="fp-dot district"></span>Future district/county area</span>
+        </div>
+      </section>
+
+      <p class="fp-shell fp-footnote">Source: paper footprint maps photographed on June 29, 2026. The map uses flat administrative boundaries rather than terrain tiles. Overseas city-level coloring is retained when boundary data is available. The data model already includes photo and county/district fields for later updates.</p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="/footprints/footprints-data.js"></script>
+    <script src="/footprints/footprints.js"></script>
+  </body>
+</html>

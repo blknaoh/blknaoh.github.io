@@ -1,0 +1,136 @@
+window.SJY_FOOTPRINTS = {
+  meta: {
+    updated: "2026-06-29",
+    source: "Digitized from paper footprint maps photographed on 2026-06-29.",
+    photoBasePath: "/footprints/photos/"
+  },
+  foreignBoundarySources: {
+    JPN: {
+      ADM1: "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/JPN/ADM1/geoBoundaries-JPN-ADM1_simplified.geojson",
+      ADM2: "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/JPN/ADM2/geoBoundaries-JPN-ADM2_simplified.geojson"
+    }
+  },
+  countries: [
+    {
+      id: "CN",
+      isoNumeric: "156",
+      name: "中国",
+      nameEn: "China",
+      firstVisit: 1997,
+      lat: 35.8617,
+      lng: 104.1954,
+      photos: []
+    },
+    {
+      id: "AU",
+      isoNumeric: "036",
+      name: "澳大利亚",
+      nameEn: "Australia",
+      firstVisit: 2023,
+      lat: -25.2744,
+      lng: 133.7751,
+      photos: []
+    },
+    {
+      id: "JP",
+      isoNumeric: "392",
+      name: "日本",
+      nameEn: "Japan",
+      firstVisit: 2024,
+      lat: 36.2048,
+      lng: 138.2529,
+      photos: []
+    }
+  ],
+  cities: [
+    { id: "zhangzhou", name: "漳州", nameEn: "Zhangzhou", country: "CN", province: "福建", firstVisit: 1997, lat: 24.513, lng: 117.647, photos: [], source: "paper-map" },
+    { id: "xiamen", name: "厦门", nameEn: "Xiamen", country: "CN", province: "福建", firstVisit: 2000, lat: 24.479, lng: 118.089, photos: [], source: "paper-map" },
+    { id: "hefei", name: "合肥", nameEn: "Hefei", country: "CN", province: "安徽", firstVisit: 2000, lat: 31.820, lng: 117.227, photos: [], source: "paper-map" },
+    { id: "shanghai", name: "上海", nameEn: "Shanghai", country: "CN", province: "上海", firstVisit: 2002, lat: 31.230, lng: 121.473, photos: [], source: "paper-map" },
+    { id: "nanjing", name: "南京", nameEn: "Nanjing", country: "CN", province: "江苏", firstVisit: 2002, lat: 32.060, lng: 118.796, photos: [], source: "paper-map" },
+    { id: "hangzhou", name: "杭州", nameEn: "Hangzhou", country: "CN", province: "浙江", firstVisit: 2002, lat: 30.274, lng: 120.155, photos: [], source: "paper-map" },
+    { id: "guangzhou", name: "广州", nameEn: "Guangzhou", country: "CN", province: "广东", firstVisit: 2002, lat: 23.129, lng: 113.264, photos: [], source: "paper-map" },
+    { id: "fuzhou", name: "福州", nameEn: "Fuzhou", country: "CN", province: "福建", firstVisit: 2004, lat: 26.074, lng: 119.296, photos: [], source: "paper-map" },
+    { id: "shenzhen", name: "深圳", nameEn: "Shenzhen", country: "CN", province: "广东", firstVisit: 2005, lat: 22.543, lng: 114.057, photos: [], source: "paper-map" },
+    { id: "zhuhai", name: "珠海", nameEn: "Zhuhai", country: "CN", province: "广东", firstVisit: 2005, lat: 22.270, lng: 113.577, photos: [], source: "paper-map" },
+    { id: "heyuan", name: "河源", nameEn: "Heyuan", country: "CN", province: "广东", firstVisit: 2006, lat: 23.743, lng: 114.700, photos: [], source: "paper-map" },
+    { id: "huizhou", name: "惠州", nameEn: "Huizhou", country: "CN", province: "广东", firstVisit: 2008, lat: 23.111, lng: 114.416, photos: [], source: "paper-map" },
+    { id: "quanzhou", name: "泉州", nameEn: "Quanzhou", country: "CN", province: "福建", firstVisit: 2008, lat: 24.874, lng: 118.675, photos: [], source: "paper-map" },
+    { id: "beijing", name: "北京", nameEn: "Beijing", country: "CN", province: "北京", firstVisit: 2008, lat: 39.904, lng: 116.407, photos: [], source: "paper-map" },
+    { id: "hongkong", name: "香港", nameEn: "Hong Kong", country: "CN", province: "香港", firstVisit: 2009, lat: 22.319, lng: 114.169, photos: [], source: "paper-map" },
+    { id: "putian", name: "莆田", nameEn: "Putian", country: "CN", province: "福建", firstVisit: 2009, lat: 25.454, lng: 119.008, photos: [], source: "paper-map" },
+    { id: "tianjin", name: "天津", nameEn: "Tianjin", country: "CN", province: "天津", firstVisit: 2009, lat: 39.084, lng: 117.200, photos: [], source: "paper-map" },
+    { id: "changsha", name: "长沙", nameEn: "Changsha", country: "CN", province: "湖南", firstVisit: 2014, lat: 28.228, lng: 112.938, photos: [], source: "paper-map" },
+    { id: "xiangtan", name: "湘潭", nameEn: "Xiangtan", country: "CN", province: "湖南", firstVisit: 2014, lat: 27.829, lng: 112.944, photos: [], source: "paper-map" },
+    { id: "hengyang", name: "衡阳", nameEn: "Hengyang", country: "CN", province: "湖南", firstVisit: 2014, lat: 26.893, lng: 112.572, photos: [], source: "paper-map" },
+    { id: "nanchong", name: "南充", nameEn: "Nanchong", country: "CN", province: "四川", firstVisit: 2015, lat: 30.837, lng: 106.110, photos: [], source: "paper-map" },
+    { id: "lanzhou", name: "兰州", nameEn: "Lanzhou", country: "CN", province: "甘肃", firstVisit: 2015, lat: 36.061, lng: 103.834, photos: [], source: "paper-map" },
+    { id: "xining", name: "西宁", nameEn: "Xining", country: "CN", province: "青海", firstVisit: 2015, lat: 36.617, lng: 101.778, photos: [], source: "paper-map" },
+    { id: "haibei", name: "海北", nameEn: "Haibei", country: "CN", province: "青海", firstVisit: 2015, lat: 36.954, lng: 100.900, photos: [], source: "paper-map" },
+    { id: "hainan-qinghai", name: "海南州", nameEn: "Hainan Prefecture", country: "CN", province: "青海", firstVisit: 2015, lat: 36.286, lng: 100.620, photos: [], source: "paper-map" },
+    { id: "haidong", name: "海东", nameEn: "Haidong", country: "CN", province: "青海", firstVisit: 2015, lat: 36.502, lng: 102.104, photos: [], source: "paper-map" },
+    { id: "qamdo", name: "昌都", nameEn: "Qamdo", country: "CN", province: "西藏", firstVisit: 2015, lat: 31.140, lng: 97.172, photos: [], source: "paper-map" },
+    { id: "yingkou", name: "营口", nameEn: "Yingkou", country: "CN", province: "辽宁", firstVisit: 2015, lat: 40.667, lng: 122.235, photos: [], source: "paper-map" },
+    { id: "dalian", name: "大连", nameEn: "Dalian", country: "CN", province: "辽宁", firstVisit: 2015, lat: 38.914, lng: 121.614, photos: [], source: "paper-map" },
+    { id: "zhangjiakou", name: "张家口", nameEn: "Zhangjiakou", country: "CN", province: "河北", firstVisit: 2016, lat: 40.767, lng: 114.887, photos: [], source: "paper-map" },
+    { id: "jinan", name: "济南", nameEn: "Jinan", country: "CN", province: "山东", firstVisit: 2016, lat: 36.651, lng: 117.120, photos: [], source: "paper-map" },
+    { id: "suzhou", name: "苏州", nameEn: "Suzhou", country: "CN", province: "江苏", firstVisit: 2017, lat: 31.299, lng: 120.585, photos: [], source: "paper-map" },
+    { id: "chizhou", name: "池州", nameEn: "Chizhou", country: "CN", province: "安徽", firstVisit: 2017, lat: 30.656, lng: 117.489, photos: [], source: "paper-map" },
+    { id: "chengdu", name: "成都", nameEn: "Chengdu", country: "CN", province: "四川", firstVisit: 2017, lat: 30.572, lng: 104.066, photos: [], source: "paper-map" },
+    { id: "nanning", name: "南宁", nameEn: "Nanning", country: "CN", province: "广西", firstVisit: 2017, lat: 22.817, lng: 108.366, photos: [], source: "paper-map" },
+    { id: "luoyang", name: "洛阳", nameEn: "Luoyang", country: "CN", province: "河南", firstVisit: 2017, lat: 34.619, lng: 112.454, photos: [], source: "paper-map" },
+    { id: "zhengzhou", name: "郑州", nameEn: "Zhengzhou", country: "CN", province: "河南", firstVisit: 2017, lat: 34.747, lng: 113.625, photos: [], source: "paper-map" },
+    { id: "qinhuangdao", name: "秦皇岛", nameEn: "Qinhuangdao", country: "CN", province: "河北", firstVisit: 2018, lat: 39.935, lng: 119.600, photos: [], source: "paper-map" },
+    { id: "shijiazhuang", name: "石家庄", nameEn: "Shijiazhuang", country: "CN", province: "河北", firstVisit: 2018, lat: 38.042, lng: 114.514, photos: [], source: "paper-map" },
+    { id: "zhoushan", name: "舟山", nameEn: "Zhoushan", country: "CN", province: "浙江", firstVisit: 2018, lat: 29.985, lng: 122.207, photos: [], source: "paper-map" },
+    { id: "nanchang", name: "南昌", nameEn: "Nanchang", country: "CN", province: "江西", firstVisit: 2018, lat: 28.682, lng: 115.858, photos: [], source: "paper-map" },
+    { id: "ningbo", name: "宁波", nameEn: "Ningbo", country: "CN", province: "浙江", firstVisit: 2018, lat: 29.868, lng: 121.550, photos: [], source: "paper-map" },
+    { id: "qingdao", name: "青岛", nameEn: "Qingdao", country: "CN", province: "山东", firstVisit: 2019, lat: 36.067, lng: 120.382, photos: [], source: "paper-map" },
+    { id: "taizhou-zj", name: "台州", nameEn: "Taizhou", country: "CN", province: "浙江", firstVisit: 2019, lat: 28.656, lng: 121.421, photos: [], source: "paper-map" },
+    { id: "wenzhou", name: "温州", nameEn: "Wenzhou", country: "CN", province: "浙江", firstVisit: 2019, lat: 27.994, lng: 120.699, photos: [], source: "paper-map" },
+    { id: "jinhua", name: "金华", nameEn: "Jinhua", country: "CN", province: "浙江", firstVisit: 2019, lat: 29.089, lng: 119.650, photos: [], source: "paper-map" },
+    { id: "jiaxing", name: "嘉兴", nameEn: "Jiaxing", country: "CN", province: "浙江", firstVisit: 2019, lat: 30.746, lng: 120.755, photos: [], source: "paper-map" },
+    { id: "chongqing", name: "重庆", nameEn: "Chongqing", country: "CN", province: "重庆", firstVisit: 2019, lat: 29.563, lng: 106.551, photos: [], source: "paper-map" },
+    { id: "wuhan", name: "武汉", nameEn: "Wuhan", country: "CN", province: "湖北", firstVisit: 2020, lat: 30.593, lng: 114.305, photos: [], source: "paper-map" },
+    { id: "sanya", name: "三亚", nameEn: "Sanya", country: "CN", province: "海南", firstVisit: 2020, lat: 18.252, lng: 109.512, photos: [], source: "paper-map" },
+    { id: "sansha", name: "三沙", nameEn: "Sansha", country: "CN", province: "海南", firstVisit: 2020, lat: 16.831, lng: 112.349, photos: [], source: "paper-map" },
+    { id: "nanyang", name: "南阳", nameEn: "Nanyang", country: "CN", province: "河南", firstVisit: 2021, lat: 32.990, lng: 112.528, photos: [], source: "paper-map" },
+    { id: "jingmen", name: "荆门", nameEn: "Jingmen", country: "CN", province: "湖北", firstVisit: 2021, lat: 31.036, lng: 112.204, photos: [], source: "paper-map" },
+    { id: "yantai", name: "烟台", nameEn: "Yantai", country: "CN", province: "山东", firstVisit: 2023, lat: 37.464, lng: 121.447, photos: [], source: "paper-map" },
+    { id: "huzhou", name: "湖州", nameEn: "Huzhou", country: "CN", province: "浙江", firstVisit: 2023, lat: 30.894, lng: 120.086, photos: [], source: "paper-map" },
+    { id: "wuxi", name: "无锡", nameEn: "Wuxi", country: "CN", province: "江苏", firstVisit: 2024, lat: 31.491, lng: 120.312, photos: [], source: "paper-map" },
+    { id: "yingtan", name: "鹰潭", nameEn: "Yingtan", country: "CN", province: "江西", firstVisit: 2024, lat: 28.260, lng: 117.069, photos: [], source: "paper-map" },
+    { id: "jingdezhen", name: "景德镇", nameEn: "Jingdezhen", country: "CN", province: "江西", firstVisit: 2024, lat: 29.269, lng: 117.178, photos: [], source: "paper-map" },
+    { id: "shangrao", name: "上饶", nameEn: "Shangrao", country: "CN", province: "江西", firstVisit: 2024, lat: 28.454, lng: 117.943, photos: [], source: "paper-map" },
+    { id: "quzhou", name: "衢州", nameEn: "Quzhou", country: "CN", province: "浙江", firstVisit: 2024, lat: 28.941, lng: 118.872, photos: [], source: "paper-map" },
+    { id: "longyan", name: "龙岩", nameEn: "Longyan", country: "CN", province: "福建", firstVisit: 2025, lat: 25.075, lng: 117.017, photos: [], source: "paper-map" },
+    { id: "nantong", name: "南通", nameEn: "Nantong", country: "CN", province: "江苏", firstVisit: 2025, lat: 31.980, lng: 120.894, photos: [], source: "paper-map" },
+    { id: "yuxi", name: "玉溪", nameEn: "Yuxi", country: "CN", province: "云南", firstVisit: 2026, lat: 24.352, lng: 102.546, photos: [], source: "paper-map" },
+    { id: "osaka", name: "大阪", nameEn: "Osaka", country: "JP", province: "大阪府", firstVisit: 2024, lat: 34.693, lng: 135.502, boundary: { iso: "JPN", level: "ADM2", name: "Osaka" }, photos: [], source: "paper-map" },
+    { id: "kobe", name: "神户", nameEn: "Kobe", country: "JP", province: "兵库县", firstVisit: 2024, lat: 34.690, lng: 135.195, boundary: { iso: "JPN", level: "ADM2", name: "Kobe" }, photos: [], source: "paper-map" },
+    { id: "kyoto", name: "京都", nameEn: "Kyoto", country: "JP", province: "京都府", firstVisit: 2024, lat: 35.011, lng: 135.768, boundary: { iso: "JPN", level: "ADM2", name: "Kyoto" }, photos: [], source: "paper-map" },
+    { id: "nara", name: "奈良", nameEn: "Nara", country: "JP", province: "奈良县", firstVisit: 2024, lat: 34.685, lng: 135.805, boundary: { iso: "JPN", level: "ADM2", name: "Nara" }, photos: [], source: "paper-map" },
+    { id: "tokyo", name: "东京", nameEn: "Tokyo", country: "JP", province: "东京都", firstVisit: 2025, lat: 35.689, lng: 139.692, boundary: { iso: "JPN", level: "ADM1", name: "Tokyo" }, photos: [], source: "paper-map" },
+    { id: "yamanashi", name: "山梨", nameEn: "Yamanashi", country: "JP", province: "山梨县", firstVisit: 2025, lat: 35.664, lng: 138.568, boundary: { iso: "JPN", level: "ADM1", name: "Yamanashi" }, photos: [], source: "paper-map" },
+    { id: "sapporo", name: "札幌", nameEn: "Sapporo", country: "JP", province: "北海道", firstVisit: 2025, lat: 43.062, lng: 141.354, boundary: { iso: "JPN", level: "ADM2", name: "Sapporo" }, photos: [], source: "paper-map" }
+  ],
+  districts: [
+    /*
+      Future county/district interface:
+      {
+        id: "xiangcheng-zhangzhou",
+        name: "芗城区",
+        nameEn: "Xiangcheng District",
+        country: "CN",
+        province: "福建",
+        city: "漳州",
+        adcode: "350602",
+        firstVisit: 1997,
+        lat: 24.51,
+        lng: 117.65,
+        geojson: "/footprints/districts/350602.geojson",
+        photos: []
+      }
+    */
+  ]
+};

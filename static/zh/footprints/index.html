@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>足迹地图 | 杨劭坚</title>
+    <meta name="description" content="杨劭坚去过地方的交互式足迹地图。">
+    <link rel="canonical" href="https://www.sjyang.top/zh/footprints/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="/footprints/footprints.css">
+  </head>
+  <body class="footprints-page" data-lang="zh">
+    <header class="fp-topbar">
+      <nav class="fp-shell fp-nav" aria-label="主导航">
+        <a class="fp-brand" href="/zh/">杨劭坚</a>
+        <div class="fp-navlinks">
+          <a href="/zh/#about">简介</a>
+          <a href="/zh/#posts">博文</a>
+          <a href="/zh/#featured">论文与专利</a>
+          <a href="/zh/footprints/" aria-current="page">足迹</a>
+          <a href="/zh/#contact">联系</a>
+          <a href="/footprints/">English</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="fp-main">
+      <section class="fp-shell fp-header">
+        <div>
+          <h1 class="fp-title">足迹地图</h1>
+          <p class="fp-subtitle">从纸质足迹地图整理出的可缩放平面地图，按已到访国家/地区和可获得边界的城市级行政区上色，后续可继续接入照片与县区级首次到访记录。</p>
+        </div>
+        <div class="fp-stats" aria-label="足迹统计">
+          <div class="fp-stat">
+            <strong id="fp-country-count">-</strong>
+            <span>国家/地区</span>
+          </div>
+          <div class="fp-stat">
+            <strong id="fp-city-count">-</strong>
+            <span>城市级行政区</span>
+          </div>
+          <div class="fp-stat">
+            <strong id="fp-district-count">-</strong>
+            <span>县区</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="fp-shell fp-board" aria-label="交互式足迹地图">
+        <div class="fp-toolbar">
+          <div class="fp-segments" aria-label="地图范围">
+            <button class="fp-control" type="button" data-scope="world" aria-pressed="true">世界</button>
+            <button class="fp-control" type="button" data-scope="china" aria-pressed="false">中国</button>
+          </div>
+          <div class="fp-actions">
+            <button class="fp-control" type="button" data-action="fit">全部足迹</button>
+          </div>
+        </div>
+        <div id="footprints-map" role="application" aria-label="可缩放足迹地图"></div>
+        <div class="fp-legend" aria-label="地图图例">
+          <span class="fp-legend-item"><span class="fp-dot country"></span>已到访国家/地区</span>
+          <span class="fp-legend-item"><span class="fp-dot city"></span>已到访城市级行政区</span>
+          <span class="fp-legend-item"><span class="fp-dot district"></span>预留县区级行政区</span>
+        </div>
+      </section>
+
+      <p class="fp-shell fp-footnote">来源：2026 年 6 月 29 日拍摄的纸质足迹地图。地图使用平面行政区边界，不加载地形底图；国外城市在有可用边界数据时也保留城市级上色；数据结构已预留照片和县区级记录字段。</p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="/footprints/footprints-data.js"></script>
+    <script src="/footprints/footprints.js"></script>
+  </body>
+</html>
