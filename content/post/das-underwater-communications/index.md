@@ -16,7 +16,7 @@ lastmod: "2026-06-29T00:00:00Z"
 featured: false
 draft: false
 image:
-  caption: "Research framework of my PhD dissertation."
+  caption: "English framework diagram redrawn from the blog narrative and dissertation context."
   focal_point: "Center"
   preview_only: false
 ---
