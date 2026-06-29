@@ -24,43 +24,6 @@
     }
   }[page];
 
-  const provinceAdcodes = {
-    北京: "110000",
-    天津: "120000",
-    河北: "130000",
-    山西: "140000",
-    内蒙古: "150000",
-    辽宁: "210000",
-    吉林: "220000",
-    黑龙江: "230000",
-    上海: "310000",
-    江苏: "320000",
-    浙江: "330000",
-    安徽: "340000",
-    福建: "350000",
-    江西: "360000",
-    山东: "370000",
-    河南: "410000",
-    湖北: "420000",
-    湖南: "430000",
-    广东: "440000",
-    广西: "450000",
-    海南: "460000",
-    重庆: "500000",
-    四川: "510000",
-    贵州: "520000",
-    云南: "530000",
-    西藏: "540000",
-    陕西: "610000",
-    甘肃: "620000",
-    青海: "630000",
-    宁夏: "640000",
-    新疆: "650000",
-    台湾: "710000",
-    香港: "810000",
-    澳门: "820000"
-  };
-  const provinceLevelCityNames = new Set(["北京", "天津", "上海", "重庆", "香港", "澳门"]);
   const yearValues = [
     ...data.countries.map((item) => item.firstVisit),
     ...data.cities.map((item) => item.firstVisit),
@@ -89,6 +52,7 @@
   const layers = {
     world: L.layerGroup().addTo(map),
     foreignCities: L.layerGroup().addTo(map),
+    chinaBase: L.layerGroup(),
     china: L.layerGroup(),
     districts: L.layerGroup()
   };
@@ -96,6 +60,7 @@
     world: L.latLngBounds([]),
     china: L.latLngBounds([])
   };
+  const cityById = new Map(data.cities.map((city) => [city.id, city]));
   let activeScope = "world";
 
   function localName(item) {
@@ -150,28 +115,6 @@
     }[char]));
   }
 
-  function normalizeName(name) {
-    return String(name || "")
-      .replace(/特别行政区/g, "")
-      .replace(/蒙古族藏族自治州/g, "")
-      .replace(/哈萨克自治州/g, "")
-      .replace(/藏族自治州/g, "")
-      .replace(/回族自治州/g, "")
-      .replace(/土家族苗族自治州/g, "")
-      .replace(/黎族苗族自治县/g, "")
-      .replace(/黎族自治县/g, "")
-      .replace(/自治州/g, "")
-      .replace(/地区/g, "")
-      .replace(/自治县/g, "")
-      .replace(/省/g, "")
-      .replace(/市/g, "")
-      .replace(/州/g, "")
-      .replace(/盟/g, "")
-      .replace(/县/g, "")
-      .replace(/区/g, "")
-      .trim();
-  }
-
   function normalizeLatin(name) {
     return String(name || "")
       .normalize("NFKD")
@@ -191,10 +134,11 @@
   }
 
   function bindVisitedFeature(layer, item) {
-    layer.bindPopup(popupHtml(item), {
-      closeButton: false,
-      autoPan: true,
-      maxWidth: 280
+    layer.bindTooltip(popupHtml(item), {
+      sticky: true,
+      direction: "top",
+      opacity: 1,
+      className: "fp-map-tooltip"
     });
     layer.on({
       mouseover: () => {
@@ -202,13 +146,13 @@
           weight: 1.8,
           fillOpacity: 0.72
         });
-        layer.openPopup();
+        layer.openTooltip();
       },
       mouseout: () => {
         layer.setStyle(visitedStyle(item));
-        layer.closePopup();
+        layer.closeTooltip();
       },
-      click: () => layer.openPopup()
+      click: () => layer.openTooltip()
     });
   }
 
@@ -241,14 +185,15 @@
       .then((topology) => {
         const countries = topojson.feature(topology, topology.objects.countries);
         L.geoJSON(countries, {
+          filter: (feature) => countryByIso.has(String(feature.id).padStart(3, "0")),
           style: (feature) => {
             const item = countryByIso.get(String(feature.id).padStart(3, "0"));
-            return item ? visitedStyle(item) : baseStyle();
+            return visitedStyle(item);
           },
           onEachFeature: (feature, layer) => {
             featureBounds(layer, "world");
             const item = countryByIso.get(String(feature.id).padStart(3, "0"));
-            if (item) bindVisitedFeature(layer, item);
+            bindVisitedFeature(layer, item);
           }
         }).addTo(layers.world);
       })
@@ -314,78 +259,41 @@
     return Promise.all(tasks);
   }
 
-  function provinceVisitedRecord(feature) {
-    const name = normalizeName(feature.properties && feature.properties.name);
-    return data.cities.find((city) => (
-      city.country === "CN" &&
-      provinceLevelCityNames.has(city.name) &&
-      normalizeName(city.name) === name
-    ));
-  }
-
-  function cityVisitedRecord(feature, provinceName) {
-    const name = normalizeName(feature.properties && feature.properties.name);
-    return data.cities.find((city) => (
-      city.country === "CN" &&
-      normalizeName(city.province) === normalizeName(provinceName) &&
-      normalizeName(city.name) === name
-    ));
-  }
-
-  function renderChinaProvinces() {
-    return fetch("https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json")
+  function renderChinaVisitedAreas() {
+    return fetch("/footprints/boundaries/china-visited.geojson")
       .then((response) => response.json())
       .then((geojson) => {
         L.geoJSON(geojson, {
           style: (feature) => {
-            const item = provinceVisitedRecord(feature);
+            const item = cityById.get(feature.properties && feature.properties.footprintId);
             return item ? visitedStyle({ ...item, kind: "city" }) : baseStyle();
           },
           onEachFeature: (feature, layer) => {
+            const item = cityById.get(feature.properties && feature.properties.footprintId);
+            if (!item) return;
             featureBounds(layer, "china");
-            const item = provinceVisitedRecord(feature);
-            if (item) bindVisitedFeature(layer, { ...item, kind: "city" });
+            bindVisitedFeature(layer, { ...item, kind: "city" });
           }
         }).addTo(layers.china);
       })
       .catch(() => {});
   }
 
-  function visitedProvinceNames() {
-    return [...new Set(
-      data.cities
-        .filter((city) => city.country === "CN" && !provinceLevelCityNames.has(city.name))
-        .map((city) => normalizeName(city.province))
-    )];
-  }
-
-  function renderChinaCities() {
-    const tasks = visitedProvinceNames()
-      .map((provinceName) => {
-        const adcode = provinceAdcodes[provinceName];
-        if (!adcode) return Promise.resolve();
-        return fetch(`https://geo.datav.aliyun.com/areas_v3/bound/${adcode}_full.json`)
-          .then((response) => response.json())
-          .then((geojson) => {
-            L.geoJSON(geojson, {
-              style: (feature) => {
-                const item = cityVisitedRecord(feature, provinceName);
-                return item ? visitedStyle({ ...item, kind: "city" }) : {
-                  ...baseStyle(),
-                  fillOpacity: 0.34,
-                  weight: 0.45
-                };
-              },
-              onEachFeature: (feature, layer) => {
-                featureBounds(layer, "china");
-                const item = cityVisitedRecord(feature, provinceName);
-                if (item) bindVisitedFeature(layer, { ...item, kind: "city" });
-              }
-            }).addTo(layers.china);
-          })
-          .catch(() => {});
-      });
-    return Promise.all(tasks);
+  function renderChinaBase() {
+    return fetch("/footprints/boundaries/china-provinces.geojson")
+      .then((response) => response.json())
+      .then((geojson) => {
+        L.geoJSON(geojson, {
+          style: {
+            ...baseStyle(),
+            color: "#9baab3",
+            fillOpacity: 0.18,
+            weight: 0.5
+          },
+          interactive: false
+        }).addTo(layers.chinaBase);
+      })
+      .catch(() => {});
   }
 
   function renderDistrictRecords() {
@@ -417,12 +325,14 @@
     if (scope === "china") {
       if (map.hasLayer(layers.world)) map.removeLayer(layers.world);
       if (map.hasLayer(layers.foreignCities)) map.removeLayer(layers.foreignCities);
+      if (!map.hasLayer(layers.chinaBase)) map.addLayer(layers.chinaBase);
       if (!map.hasLayer(layers.china)) map.addLayer(layers.china);
       if (!map.hasLayer(layers.districts)) map.addLayer(layers.districts);
       fitChina();
     } else {
       if (!map.hasLayer(layers.world)) map.addLayer(layers.world);
       if (!map.hasLayer(layers.foreignCities)) map.addLayer(layers.foreignCities);
+      if (map.hasLayer(layers.chinaBase)) map.removeLayer(layers.chinaBase);
       if (map.hasLayer(layers.china)) map.removeLayer(layers.china);
       if (map.hasLayer(layers.districts)) map.removeLayer(layers.districts);
       fitWorld();
@@ -480,8 +390,8 @@
   });
 
   Promise.all([
-    renderChinaProvinces(),
-    renderChinaCities(),
+    renderChinaBase(),
+    renderChinaVisitedAreas(),
     renderDistrictRecords()
   ]).then(() => {
     if (activeScope === "china") fitChina();
