@@ -30,15 +30,15 @@
           <h1 class="fp-title">Footprints</h1>
         </div>
         <div class="fp-stats" aria-label="Footprint statistics">
-          <div class="fp-stat">
+          <div class="fp-stat" data-stat="countries">
             <strong id="fp-country-count">-</strong>
             <span>Countries/regions</span>
           </div>
-          <div class="fp-stat">
+          <div class="fp-stat" data-stat="cities">
             <strong id="fp-city-count">-</strong>
             <span>City-level areas</span>
           </div>
-          <div class="fp-stat">
+          <div class="fp-stat" data-stat="districts">
             <strong id="fp-district-count">-</strong>
             <span>Districts</span>
           </div>
@@ -48,8 +48,8 @@
       <section class="fp-shell fp-board" aria-label="Interactive footprint map">
         <div class="fp-toolbar">
           <div class="fp-segments" aria-label="Map scope">
-            <button class="fp-control" type="button" data-scope="world" aria-pressed="true">World</button>
-            <button class="fp-control" type="button" data-scope="china" aria-pressed="false">China</button>
+            <button class="fp-control" type="button" data-scope="world" aria-pressed="false">World</button>
+            <button class="fp-control" type="button" data-scope="china" aria-pressed="true">China</button>
           </div>
           <div class="fp-actions">
             <button class="fp-control" type="button" data-action="fit">All footprints</button>

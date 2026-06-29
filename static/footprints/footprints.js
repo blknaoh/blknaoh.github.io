@@ -10,7 +10,12 @@
       countryLevel: "国家/地区级记录",
       cityLevel: "城市级行政区记录",
       districtLevel: "县区级记录",
-      noDistricts: "待补充"
+      noDistricts: "待补充",
+      china: "中国",
+      japan: "日本",
+      australia: "澳大利亚",
+      asia: "亚洲",
+      oceania: "大洋洲"
     },
     en: {
       countries: "Countries/regions",
@@ -20,9 +25,28 @@
       countryLevel: "Country/region-level record",
       cityLevel: "City-level record",
       districtLevel: "District/county-level record",
-      noDistricts: "reserved"
+      noDistricts: "reserved",
+      china: "China",
+      japan: "Japan",
+      australia: "Australia",
+      asia: "Asia",
+      oceania: "Oceania"
     }
   }[page];
+  const cityCountryGroups = [
+    ["CN", labels.china],
+    ["JP", labels.japan],
+    ["AU", labels.australia]
+  ];
+  const continentGroups = [
+    ["asia", labels.asia],
+    ["oceania", labels.oceania]
+  ];
+  const countryContinents = {
+    AU: "oceania",
+    CN: "asia",
+    JP: "asia"
+  };
 
   const yearValues = [
     ...data.countries.map((item) => item.firstVisit),
@@ -85,8 +109,8 @@
   attribution.addAttribution('Boundaries: <a href="https://github.com/topojson/world-atlas">world-atlas</a>, <a href="https://datav.aliyun.com/portal/school/atlas/area_selector">Aliyun DataV</a>, <a href="https://www.geoboundaries.org/">geoBoundaries</a>');
 
   const layers = {
-    world: L.layerGroup().addTo(map),
-    foreignCities: L.layerGroup().addTo(map),
+    world: L.layerGroup(),
+    foreignCities: L.layerGroup(),
     chinaBase: L.layerGroup(),
     china: L.layerGroup(),
     districts: L.layerGroup()
@@ -96,7 +120,7 @@
     china: L.latLngBounds([])
   };
   const cityById = new Map(data.cities.map((city) => [city.id, city]));
-  let activeScope = "world";
+  let activeScope = "china";
 
   function localName(item) {
     return page === "zh" ? item.name : item.nameEn || item.name;
@@ -401,11 +425,30 @@
     setText("fp-country-count", data.countries.length);
     setText("fp-city-count", data.cities.length);
     setText("fp-district-count", (data.districts || []).length || labels.noDistricts);
+    setStatTooltip("countries", continentGroups.map(([continent, label]) => {
+      const count = data.countries.filter((country) => countryContinents[country.id] === continent).length;
+      return `${label} ${count}`;
+    }).join(" · "));
+    setStatTooltip("cities", cityCountryGroups.map(([country, label]) => {
+      const count = data.cities.filter((city) => city.country === country).length;
+      return `${label} ${count}`;
+    }).join(" · "));
   }
 
   function setText(id, value) {
     const node = document.getElementById(id);
     if (node) node.textContent = value;
+  }
+
+  function setStatTooltip(stat, value) {
+    const node = document.querySelector(`[data-stat="${stat}"]`);
+    if (!node) return;
+    const count = node.querySelector("strong") ? node.querySelector("strong").textContent : "";
+    const label = node.querySelector("span") ? node.querySelector("span").textContent : "";
+    node.dataset.tooltip = value;
+    node.title = value;
+    node.tabIndex = 0;
+    node.setAttribute("aria-label", `${count} ${label}: ${value}`);
   }
 
   document.querySelectorAll("[data-scope]").forEach((button) => {

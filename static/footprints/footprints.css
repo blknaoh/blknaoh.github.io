@@ -115,10 +115,48 @@ body.footprints-page {
 }
 
 .fp-stat {
+  position: relative;
   border: 1px solid var(--fp-border);
   border-radius: 8px;
   background: var(--fp-surface);
   padding: 12px;
+}
+
+.fp-stat[data-tooltip] {
+  cursor: help;
+}
+
+.fp-stat[data-tooltip]:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--fp-accent-3) 68%, transparent);
+  outline-offset: 3px;
+}
+
+.fp-stat[data-tooltip]::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 650;
+  max-width: min(280px, 72vw);
+  padding: 8px 10px;
+  border: 1px solid var(--fp-border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--fp-surface) 96%, transparent);
+  box-shadow: 0 10px 28px rgba(15, 35, 55, 0.16);
+  color: var(--fp-text);
+  content: attr(data-tooltip);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-3px);
+  transition: opacity 140ms ease, transform 140ms ease;
+  white-space: nowrap;
+}
+
+.fp-stat[data-tooltip]:hover::after,
+.fp-stat[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fp-stat strong {

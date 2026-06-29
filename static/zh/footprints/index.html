@@ -30,15 +30,15 @@
           <h1 class="fp-title">足迹地图</h1>
         </div>
         <div class="fp-stats" aria-label="足迹统计">
-          <div class="fp-stat">
+          <div class="fp-stat" data-stat="countries">
             <strong id="fp-country-count">-</strong>
             <span>国家/地区</span>
           </div>
-          <div class="fp-stat">
+          <div class="fp-stat" data-stat="cities">
             <strong id="fp-city-count">-</strong>
             <span>城市级行政区</span>
           </div>
-          <div class="fp-stat">
+          <div class="fp-stat" data-stat="districts">
             <strong id="fp-district-count">-</strong>
             <span>县区</span>
           </div>
@@ -48,8 +48,8 @@
       <section class="fp-shell fp-board" aria-label="交互式足迹地图">
         <div class="fp-toolbar">
           <div class="fp-segments" aria-label="地图范围">
-            <button class="fp-control" type="button" data-scope="world" aria-pressed="true">世界</button>
-            <button class="fp-control" type="button" data-scope="china" aria-pressed="false">中国</button>
+            <button class="fp-control" type="button" data-scope="world" aria-pressed="false">世界</button>
+            <button class="fp-control" type="button" data-scope="china" aria-pressed="true">中国</button>
           </div>
           <div class="fp-actions">
             <button class="fp-control" type="button" data-action="fit">全部足迹</button>

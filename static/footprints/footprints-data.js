@@ -108,13 +108,13 @@ window.SJY_FOOTPRINTS = {
     { id: "nantong", name: "南通", nameEn: "Nantong", country: "CN", province: "江苏", firstVisit: 2025, lat: 31.980, lng: 120.894, photos: [], source: "paper-map" },
     { id: "kunming", name: "昆明", nameEn: "Kunming", country: "CN", province: "云南", firstVisit: 2026, lat: 25.038, lng: 102.718, photos: [], source: "paper-map" },
     { id: "yuxi", name: "玉溪", nameEn: "Yuxi", country: "CN", province: "云南", firstVisit: 2026, lat: 24.352, lng: 102.546, photos: [], source: "paper-map" },
-    { id: "osaka", name: "大阪", nameEn: "Osaka", country: "JP", province: "大阪府", firstVisit: 2024, lat: 34.693, lng: 135.502, boundary: { iso: "JPN", level: "ADM2", name: "Osaka" }, photos: [], source: "paper-map" },
-    { id: "kobe", name: "神户", nameEn: "Kobe", country: "JP", province: "兵库县", firstVisit: 2024, lat: 34.690, lng: 135.195, boundary: { iso: "JPN", level: "ADM2", name: "Kobe" }, photos: [], source: "paper-map" },
-    { id: "kyoto", name: "京都", nameEn: "Kyoto", country: "JP", province: "京都府", firstVisit: 2024, lat: 35.011, lng: 135.768, boundary: { iso: "JPN", level: "ADM2", name: "Kyoto" }, photos: [], source: "paper-map" },
-    { id: "nara", name: "奈良", nameEn: "Nara", country: "JP", province: "奈良县", firstVisit: 2024, lat: 34.685, lng: 135.805, boundary: { iso: "JPN", level: "ADM2", name: "Nara" }, photos: [], source: "paper-map" },
-    { id: "tokyo", name: "东京", nameEn: "Tokyo", country: "JP", province: "东京都", firstVisit: 2025, lat: 35.689, lng: 139.692, boundary: { iso: "JPN", level: "ADM1", name: "Tokyo" }, photos: [], source: "paper-map" },
-    { id: "yamanashi", name: "山梨", nameEn: "Yamanashi", country: "JP", province: "山梨县", firstVisit: 2025, lat: 35.664, lng: 138.568, boundary: { iso: "JPN", level: "ADM1", name: "Yamanashi" }, photos: [], source: "paper-map" },
-    { id: "sapporo", name: "札幌", nameEn: "Sapporo", country: "JP", province: "北海道", firstVisit: 2025, lat: 43.062, lng: 141.354, boundary: { iso: "JPN", level: "ADM2", name: "Sapporo" }, photos: [], source: "paper-map" }
+    { id: "osaka", name: "大阪府", nameEn: "Osaka Prefecture", country: "JP", province: "大阪府", firstVisit: 2024, lat: 34.686, lng: 135.520, boundary: { iso: "JPN", level: "ADM1", name: "Osaka" }, photos: [], source: "paper-map" },
+    { id: "hyogo", name: "兵库县", nameEn: "Hyogo Prefecture", country: "JP", province: "兵库县", firstVisit: 2024, lat: 34.857, lng: 134.545, boundary: { iso: "JPN", level: "ADM1", name: "Hyogo" }, photos: [], source: "paper-map" },
+    { id: "kyoto", name: "京都府", nameEn: "Kyoto Prefecture", country: "JP", province: "京都府", firstVisit: 2024, lat: 35.156, lng: 135.525, boundary: { iso: "JPN", level: "ADM1", name: "Kyoto" }, photos: [], source: "paper-map" },
+    { id: "nara", name: "奈良县", nameEn: "Nara Prefecture", country: "JP", province: "奈良县", firstVisit: 2024, lat: 34.297, lng: 135.827, boundary: { iso: "JPN", level: "ADM1", name: "Nara" }, photos: [], source: "paper-map" },
+    { id: "tokyo", name: "东京都", nameEn: "Tokyo Metropolis", country: "JP", province: "东京都", firstVisit: 2025, lat: 35.676, lng: 139.650, boundary: { iso: "JPN", level: "ADM1", name: "Tokyo" }, photos: [], source: "paper-map" },
+    { id: "yamanashi", name: "山梨县", nameEn: "Yamanashi Prefecture", country: "JP", province: "山梨县", firstVisit: 2025, lat: 35.664, lng: 138.568, boundary: { iso: "JPN", level: "ADM1", name: "Yamanashi" }, photos: [], source: "paper-map" },
+    { id: "hokkaido", name: "北海道", nameEn: "Hokkaido", country: "JP", province: "北海道", firstVisit: 2025, lat: 43.220, lng: 142.863, boundary: { iso: "JPN", level: "ADM1", name: "Hokkaido" }, photos: [], source: "paper-map" }
   ],
   districts: [
     /*
