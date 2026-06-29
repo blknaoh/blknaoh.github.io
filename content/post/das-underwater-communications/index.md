@@ -1,7 +1,7 @@
 ---
 title: "Receiverless Underwater Telemetry with Submarine Cables"
-subtitle: "From a DAS channel study to an infrastructure-free AUV communication architecture"
-summary: "How my 2021 DAS underwater communication paper fits into the broader PhD dissertation problem: enabling AUV data return when conventional receiving infrastructure is absent."
+subtitle: "How a DAS channel study became part of a cable-assisted AUV communication architecture"
+summary: "A readable account of how submarine optical-electric cables can help AUVs return data when conventional underwater receiving infrastructure is absent."
 authors:
 - admin
 tags:
@@ -15,66 +15,85 @@ date: "2026-06-29T00:00:00Z"
 lastmod: "2026-06-29T00:00:00Z"
 featured: false
 draft: false
+translationKey: das-underwater-communications
 image:
-  caption: "English framework diagram redrawn from the blog narrative and dissertation context."
+  caption: "Framework of cable-assisted AUV telemetry, adapted from my doctoral dissertation."
   focal_point: "Center"
   preview_only: false
 ---
 
-Underwater acoustic communication is often discussed as a problem of bandwidth, propagation loss, multipath, or Doppler spread. Those are real problems, but my doctoral dissertation starts from an even more basic one: in many ocean scenarios, the receiver itself is missing.
+**Language:** English | [中文](/zh/post/das-underwater-communications/)
 
-Autonomous underwater vehicles (AUVs) can collect valuable data during ecological surveys, environmental monitoring, deep-sea exploration, and subsea infrastructure inspection. Yet the value of that data depends on whether it can return to shore while the mission is still alive. In remote oceans, deep water, polar regions, or surface-restricted areas, conventional receiving infrastructure such as relay buoys, ships, seabed hydrophones, and cabled base stations may be too expensive, too visible, too fragile, or simply unavailable.
+Underwater communication is usually introduced through familiar technical limits: bandwidth is narrow, sound propagation is slow, multipath is messy, and Doppler spread is hard to tame. My doctoral dissertation started from an even more basic difficulty: sometimes the receiver is simply not there.
 
-That changes the nature of the communication problem. It is not only a question of how fast a modem can transmit. It is a question of whether a usable receiving path exists at all.
+An autonomous underwater vehicle can spend hours or days collecting valuable data during ecological surveys, environmental monitoring, deep-sea exploration, or subsea infrastructure inspection. But the data only becomes useful if it can get back to shore in time. In remote oceans, deep water, polar regions, and surface-restricted missions, a relay buoy, a ship, a seabed hydrophone, or a fixed cabled station may be too expensive, too visible, too fragile, or unavailable.
 
-My PhD dissertation, *Research on Underwater Acoustic Communications Based on Unconventional Receivers for Data Backhaul*, framed this as a "receiverless" or "receiver-infrastructure-limited" telemetry problem. The work explored two unconventional receiving routes:
+That is the problem behind the word "receiverless" in my dissertation. It does not mean communication without physics. It means communication when the usual receiving infrastructure cannot be assumed.
 
-1. An airborne microphone on an unmanned aerial vehicle receiving underwater acoustic signals after they pass through the water-air interface.
-2. A submarine optical-electric cable, interrogated by distributed acoustic sensing (DAS), acting as a distributed underwater acoustic receiver.
+My PhD dissertation, *Research on Underwater Acoustic Communications Based on Unconventional Receivers for Data Backhaul*, explored two ways to create a receiving path from things that were not originally designed as underwater acoustic receivers:
 
-This post focuses on the second route, because it connects directly to my most-cited paper as of June 29, 2026: [*Channel Distribution and Noise Characteristics of Distributed Acoustic Sensing Underwater Communications*](https://doi.org/10.1109/JSEN.2021.3115581), which Google Scholar lists with 21 citations. The paper was an early step in answering a practical question: can a submarine cable be more than a communication pipe? Can it become an acoustic receiving infrastructure for AUV data return?
+1. An airborne microphone on an unmanned aerial vehicle, listening after an underwater acoustic signal crosses the water-air interface.
+2. A submarine optical-electric cable, interrogated by distributed acoustic sensing (DAS), acting as a long distributed acoustic receiver.
 
-The core idea is to repurpose the cable. A DAS system sends coherent optical pulses into a fiber and measures the phase changes in Rayleigh backscatter. External acoustic waves cause tiny strain perturbations along the cable, and those perturbations appear in the returned optical signal. In effect, a long fiber becomes a dense line of sensing channels. If an AUV transmits an acoustic packet near the cable, the shore station may be able to recover that packet without deploying a hydrophone at the seafloor.
+This post focuses on the second route. It connects directly to my 2021 paper, [*Channel Distribution and Noise Characteristics of Distributed Acoustic Sensing Underwater Communications*](https://doi.org/10.1109/JSEN.2021.3115581), and to the later cable-assisted communication framework in my dissertation.
 
-This is attractive because submarine communication cables already span large ocean regions. Many cables include unused fibers, often called dark fibers. If a shore station can connect a DAS interrogator to such a fiber, the cable can become a passive, distributed acoustic receiving array while remaining physically continuous, covert, and low-maintenance.
+## Turning a cable into a receiver
 
-But this architecture only becomes useful if the channel is understood. In Chapter 4 of my dissertation, I modeled the path from underwater acoustic emission to DAS observation as a cascade:
+The idea is simple to state: let the cable listen.
+
+A DAS system sends coherent optical pulses into an optical fiber and measures phase changes in the Rayleigh backscatter. When an external acoustic wave shakes the cable, it creates tiny strain variations along the fiber. Those variations appear in the optical return. In effect, a long fiber can become a dense line of sensing channels.
+
+This is attractive because submarine cables already cross large ocean regions. Many optical-electric cables also include fibers that can be accessed from shore. If a DAS interrogator is connected to such a fiber, the cable can become a passive acoustic receiving array without deploying a separate hydrophone on the seabed.
+
+But there is a catch. A DAS cable does not hear the ocean the way a hydrophone does. A hydrophone records pressure at a point. A cable-based DAS receiver records strain over fiber sections after the signal has passed through water, sediment, cable structure, and optical sensing hardware. Chapter 4 of my dissertation therefore treated the received signal as a cascade:
 
 - acoustic propagation in water,
 - coupling through the seafloor or cable environment,
 - mechanical response of the cable,
-- conversion of cable strain into optical phase variation.
+- conversion from cable strain to optical phase variation.
 
-This means the received DAS signal is not the same as the pressure waveform that a hydrophone would record. It is the result of a coupled water-sediment-cable-fiber system. Multipath still matters, but so do cable structure, adjacent sensing sections, gauge length, pulse repetition frequency, and the way vibration travels along the cable.
+That cascade is the reason the channel study matters. Before designing a modem around a submarine cable, we need to know what the cable actually hears.
 
-The 2021 field experiment measured this channel with a lightweight protected armored optical-electric cable in Mulan Lake. The transmitter was mounted from a boat, with the transducer placed about 2 m below the surface. The cable lay on the lakebed and was connected to a shore-based DAS device. We tested multiple acoustic waveforms, including LFM, BASK, MFSK, QPSK, and OFDM signals, at distances ranging from 1 m to 1000 m.
+## What the 2021 experiment showed
 
-Several observations from that study have stayed important in my later work.
+The field experiment used a lightweight protected armored optical-electric cable in Mulan Lake. A transducer was suspended from a boat about 2 m below the surface. The cable lay on the lakebed and was connected to a shore-based DAS device. We transmitted several acoustic waveforms, including LFM, BASK, MFSK, QPSK, and OFDM signals, at distances from 1 m to 1000 m.
 
-First, the DAS channel statistics were not well described by the simple assumptions one might borrow from a conventional acoustic receiver. The envelope amplitudes of the measured impulse responses were better fitted by a Burr distribution than by Rayleigh or normal distributions. The sound source position relative to the cable also changed the distribution. When the source moved closer to the cable's overhead region, the received energy became more concentrated.
+Three observations from that work continued to shape my later research.
 
-Second, adjacent cable sections were not independent. In an idealized DAS receiver, one might imagine each spatial segment as a clean channel. In practice, vibration can couple through neighboring sections, and the signal recorded at one segment can contain contributions from nearby cable portions. This creates additional arrivals and affects the effective channel delay spread. In QPSK measurements, the estimated maximum delays were about 9.9 to 13.8 ms, with roughly 12 to 14 effective taps across different measurement times.
+First, the DAS channel did not follow the simplest textbook assumptions. The envelope amplitudes of the measured impulse responses were better fitted by a Burr distribution than by Rayleigh or normal distributions. The source position also mattered: when the transmitter moved closer to the region above the cable, the received energy became more concentrated.
 
-Third, the noise was not just ocean noise. Compared with the classical Wenz noise picture of wind and shipping contributions, the DAS background showed its own spectral structure. Below 1 kHz, the measured DAS noise power spectral density decreased at about 18 dB per octave, a behavior mainly shaped by the equipment and cable system. The noise also fluctuated across time, frequency, and sensing channels. For modem design, this matters: the receiver should not be tuned only for a textbook hydrophone noise model.
+Second, neighboring cable sections were not independent clean channels. Vibration could couple along the cable, so a signal recorded at one section could include contributions from nearby sections. This produced additional arrivals and affected the effective delay spread. In QPSK measurements, the estimated maximum delays were about 9.9 to 13.8 ms, with roughly 12 to 14 effective taps.
 
-The dissertation then pushed this idea beyond channel measurement. Chapter 5 asked what a complete AUV communication loop might look like if the submarine cable itself became part of the communication infrastructure.
+Third, the background noise was not just ordinary ocean noise. Below 1 kHz, the DAS noise power spectral density decreased at about 18 dB per octave, mainly shaped by the equipment and cable system rather than only by shipping or wind. The noise also fluctuated across time, frequency, and sensing channel. A receiver designed for a hydrophone noise model would miss part of the problem.
 
-For the uplink, the answer was acoustic-to-optical: the AUV transmits an acoustic signal, the cable senses it through DAS, and the shore station demodulates it. In a lake-trial uplink system, a QPSK signal at a 5 kHz carrier occupied about 3660 Hz of bandwidth and achieved an effective packet data rate of about 2628 bps. The DAS received signal had much lower SNR than a nearby hydrophone in the same experiment, but it still carried recoverable communication data. That is the engineering point: the cable did not need to behave like an ideal hydrophone to be useful.
+The important conclusion was not that the cable behaves like an ideal hydrophone. It does not. The useful conclusion was that the cable still carries recoverable communication information, as long as the receiver is designed for the channel it actually observes.
 
-For the downlink, the dissertation introduced a complementary magnetic route using the copper conductor in an optical-electric submarine cable. A shore station injects a modulated low-frequency current into the cable, creating a magnetic field near the cable. A high-sensitivity NV-center diamond magnetometer can detect that field underwater and recover low-rate commands. In the sea trial, an MFSK downlink used 16 tones from 27 Hz to 477 Hz, with a symbol duration of 0.5 s, achieving about 7.2 bps. That rate is modest, but it is enough for low-rate command delivery, status updates, or parameter configuration.
+## From channel study to communication loop
 
-Together, the DAS uplink and magnetic downlink form a heterogeneous cable-assisted communication loop:
+Chapter 5 of my dissertation asked the next question: if a submarine optical-electric cable can receive data from an AUV, can it also help complete a two-way communication loop?
 
-- acoustic-optical coupling for data return from AUV to shore,
-- electric-magnetic coupling for command delivery from shore to AUV.
+For the uplink, the answer was acoustic-to-optical. The AUV transmits an acoustic packet; the cable senses the vibration through DAS; the shore station demodulates the signal from the optical return. In a lake-trial uplink system, a QPSK signal at a 5 kHz carrier occupied about 3660 Hz of bandwidth and achieved an effective packet data rate of about 2628 bps. The DAS signal had much lower SNR than a nearby hydrophone, but it was still usable.
 
-The broader lesson is that underwater communication does not have to rely only on deploying more standalone receivers. In some scenarios, it may be more practical to reinterpret existing infrastructure as part of the communication medium. A submarine cable can be a data pipe, a sensor, a receiver array, a magnetic transmitter, and a physical reference line for underwater systems.
+For the downlink, the dissertation introduced a complementary magnetic route. A shore station injects a modulated low-frequency current into the copper conductor of an optical-electric cable. The current creates a magnetic field near the cable. A high-sensitivity NV-center diamond magnetometer carried by the underwater platform can detect the field and recover low-rate commands. In the sea trial, an MFSK downlink used 16 tones from 27 Hz to 477 Hz with a symbol duration of 0.5 s, achieving about 7.2 bps.
 
-That is why the 2021 DAS channel paper became an important reference point in my research. It did not solve the entire AUV telemetry problem by itself. Instead, it clarified the first layer of the problem: what the cable hears, how it hears, and what kind of noise and channel structure a communication receiver must confront. The later dissertation work built on that foundation to show a more complete architecture for infrastructure-free or infrastructure-limited ocean telemetry.
+The two links are asymmetric, but they fit the mission:
 
-For me, this direction remains compelling because it shifts the design question from "How do we deploy a receiver everywhere?" to "What can already receive, if we learn how to listen?"
+- acoustic-optical uplink for returning data from AUV to shore,
+- electric-magnetic downlink for sending commands from shore to AUV.
 
-Sources and related pages:
+This is the broader architecture behind the framework diagram. A submarine cable is no longer only a data pipe. It can also act as a distributed acoustic receiver, a magnetic transmitter, and a physical reference line for underwater systems.
+
+## Why this still feels important
+
+The 2021 DAS channel paper did not solve the entire telemetry problem by itself. Its value was more foundational: it clarified what a cable-based receiver hears, how different that observation is from a hydrophone recording, and what kind of channel and noise structure a modem must face.
+
+The later dissertation work built on that foundation and moved from "Can the cable hear an acoustic signal?" to "Can the cable help an AUV return data when ordinary receiving infrastructure is missing?"
+
+For me, that shift is the exciting part. Instead of asking only how to deploy more receivers in the ocean, we can ask a more flexible question:
+
+What existing infrastructure can already receive something useful, if we learn how to listen?
+
+## Sources and related pages
 
 - Paper DOI: <https://doi.org/10.1109/JSEN.2021.3115581>
 - PhD dissertation source: Chapters 1, 4, and 5 of my doctoral thesis

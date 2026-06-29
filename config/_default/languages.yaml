@@ -5,16 +5,19 @@
 # Default language
 en:
   languageCode: en-us
+  languageName: English
+  contentDir: content
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 
 # Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
+zh:
+  languageCode: zh-Hans
+  languageName: 中文
+  contentDir: content
+  title: Shaojian Yang
+  params:
+    description: Shaojian Yang's academic homepage.
 #  menu:
 #    main:
 #      - name: 传
