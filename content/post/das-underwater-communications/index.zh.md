@@ -17,16 +17,14 @@ featured: false
 draft: false
 translationKey: das-underwater-communications
 image:
-  caption: "基于海底光电复合缆的 AUV 遥测通信框架，依据博士论文相关章节重绘。"
+  caption: ""
   focal_point: "Center"
   preview_only: false
 ---
 
 **语言：** [English](/post/das-underwater-communications/) | 中文
 
-![基于海底光电复合缆的 AUV 遥测通信框架](cable-telemetry-framework-zh.svg)
-
-*图：基于海底光电复合缆的 AUV 遥测通信框架，依据博士论文第 5 章系统思路重绘。*
+> 说明：本文由 ChatGPT/Codex 根据我的博士论文 LaTeX 源文件，尤其是第 1、4、5 章，2021 年 IEEE Sensors Journal 的 DAS 信道论文，以及本主页更新时使用的公开学术主页和论文记录自动生成。
 
 谈到水下通信，人们通常会先想到带宽窄、传播慢、多途复杂、多普勒扩展严重。这些当然都是真问题。但我的博士论文从一个更朴素、也更棘手的问题开始：很多时候，接收机本身并不在场。
 
