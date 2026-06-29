@@ -2,15 +2,14 @@
 title: "An Improved UNet Algorithm Based on Multiscale Features and Attention Modules for Underwater Salient Multi-Target Detection"
 authors:
 - Haibin Han
-- Honghao Yan
+- Xinyi Zhou
 - Haodi Zhu
-- Na Wei
+- Yueyi Qiao
 - admin
-- Zhenyu Ge
-- Xingqian Zhu
+- Yan Wei
 - Fengzhong Qu
 date: "2025-06-16T00:00:00Z"
-doi: ""
+doi: "10.1109/OCEANS58557.2025.11104717"
 publishDate: "2025-06-16T00:00:00Z"
 publication_types: ["paper-conference"]
 publication: "In *OCEANS 2025 - Brest*"

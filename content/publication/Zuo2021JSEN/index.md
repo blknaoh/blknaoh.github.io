@@ -41,7 +41,7 @@ tags:
 - Optical fiber sensors
 - Underwater cables
 - Underwater communication
-featured: false
+featured: true
 
 # links:
 # - name: ""
@@ -76,6 +76,5 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
-
 
 

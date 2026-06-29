@@ -4,10 +4,9 @@ authors:
 - Chengwei Zhu
 - Jingyu Qian
 - Mingjinghan Wang
-- Fengzhong Qu
-- Yan Wei
-- Xuesong Lu
 - admin
+- Yan Wei
+- Fengzhong Qu
 date: "2026-06-01T00:00:00Z"
 doi: "10.1088/1742-6596/3265/1/012019"
 publishDate: "2026-06-01T00:00:00Z"

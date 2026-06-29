@@ -25,7 +25,7 @@ author_notes:
   - ''
 
 date: '2024-10-20T00:00:00Z'
-doi: ''
+doi: '10.1109/SENSORS60989.2024.10785216'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2024-10-20T00:00:00Z'

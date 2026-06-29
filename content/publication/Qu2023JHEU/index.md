@@ -2,14 +2,13 @@
 title: "应用于海洋物联网的水声通信技术发展综述"
 authors:
 - Fengzhong Qu
-- Yan Wei
-- Yufan Yuan
+- Yanbing Fu
 - admin_CH
+- Xiaoxiao Zhuo
 - Xingbin Tu
-- Yu Yuan
-- Xuesong Lu
+- Yan Wei
 date: "2023-11-01T00:00:00Z"
-doi: ""
+doi: "10.11990/jheu.202306023"
 publishDate: "2023-11-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication: "*哈尔滨工程大学学报*"

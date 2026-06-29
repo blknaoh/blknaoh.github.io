@@ -2,13 +2,13 @@
 title: "基于 GRU 和 ResNet 的短时水声通信信号调制识别"
 authors:
 - Fengzhong Qu
-- Yan Wei
-- admin_CH
+- Jiang Zhu
 - Xingbin Tu
-- Yu Yuan
-- Xuesong Lu
+- admin_CH
+- Yan Wei
+- Hao Fang
 date: "2023-10-01T00:00:00Z"
-doi: ""
+doi: "10.16798/j.issn.1003-0530.2023.10.007"
 publishDate: "2023-10-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication: "*信号处理*"

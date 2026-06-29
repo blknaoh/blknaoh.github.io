@@ -4,11 +4,16 @@ authors:
 - Yan Wei
 - Haibin Han
 - Qinglin Mu
+- Haodi Zhu
+- Yueyi Qiao
 - admin
 - Chaoyi Yu
 - Na Wei
 - Hanyan Luo
 - Luyuan Zhao
+- Xuping Zhuo
+- Yufan Yuan
+- Fengzhong Qu
 - Guoquan Wang
 date: "2026-01-01T00:00:00Z"
 doi: "10.1016/j.marpolbul.2026.119872"
