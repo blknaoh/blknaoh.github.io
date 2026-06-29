@@ -1,10 +1,18 @@
 ---
 title: "一种不受海面波浪影响的跨水空介质通信系统及其方法"
 authors:
+- 魏艳
+- 钱靖瑜
+- 马静武
+- 瞿逢重
+- 涂星滨
+- 何雨嘉
+- 苏家艺
 - admin_CH
-date: "2023-01-01T00:00:00Z"
+- 李静萱
+date: "2023-07-07T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2023-07-07T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202310830130.7 / CN202310830130.7. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +49,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202310830130.7 / CN202310830130.7
+- 申请日 / Filing date: 2023-07-07
+- 发明人 / Inventors: 魏艳; 钱靖瑜; 马静武; 瞿逢重; 涂星滨; 何雨嘉; 苏家艺; 杨劭坚; 李静萱
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202310830130.7/.html?type=s>

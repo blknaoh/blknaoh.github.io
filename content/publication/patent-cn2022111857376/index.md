@@ -1,10 +1,19 @@
 ---
 title: "一种多跳水声通信网络冲突避免时隙分配方法"
 authors:
+- 魏艳
+- 卓晓晓
+- 刘美燕
+- 袁屿藩
+- 瞿逢重
+- 涂星滨
+- 陆雪松
+- 李志鹏
 - admin_CH
-date: "2022-01-01T00:00:00Z"
+- 赵航芳
+date: "2022-09-28T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2022-09-28T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202211185737.6 / CN202211185737.6. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +50,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202211185737.6 / CN202211185737.6
+- 申请日 / Filing date: 2022-09-28
+- 发明人 / Inventors: 魏艳; 卓晓晓; 刘美燕; 袁屿藩; 瞿逢重; 涂星滨; 陆雪松; 李志鹏; 杨劭坚; 赵航芳
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202211185737.6/.html?type=s>

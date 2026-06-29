@@ -1,10 +1,19 @@
 ---
 title: "基于互干扰避免的全双工水声通信媒介访问控制方法"
 authors:
+- 瞿逢重
+- 卓晓晓
+- 刘美燕
+- 袁屿藩
+- 魏艳
+- 涂星滨
+- 陆雪松
+- 李志鹏
 - admin_CH
-date: "2022-01-01T00:00:00Z"
+- 赵航芳
+date: "2022-10-14T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2022-10-14T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202211256238.1 / CN202211256238.1. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +50,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202211256238.1 / CN202211256238.1
+- 申请日 / Filing date: 2022-10-14
+- 发明人 / Inventors: 瞿逢重; 卓晓晓; 刘美燕; 袁屿藩; 魏艳; 涂星滨; 陆雪松; 李志鹏; 杨劭坚; 赵航芳
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202211256238.1/.html?type=s>

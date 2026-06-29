@@ -1,10 +1,18 @@
 ---
 title: "一种适用于高浊度海域的营养盐分析方法及系统"
 authors:
+- 瞿逢重
+- 何佳敏
 - admin_CH
-date: "2025-01-01T00:00:00Z"
+- 韩海斌
+- 李莉
+- 魏艳
+- 朱江
+- 吴叶舟
+- 涂星滨
+date: "2025-08-28T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2025-08-28T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202511218112.9 / CN202511218112.9. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +49,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202511218112.9 / CN202511218112.9
+- 申请日 / Filing date: 2025-08-28
+- 发明人 / Inventors: 瞿逢重; 何佳敏; 杨劭坚; 韩海斌; 李莉; 魏艳; 朱江; 吴叶舟; 涂星滨
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202511218112.9/.html?type=s>

@@ -1,14 +1,19 @@
 ---
 title: "不完全观测场景下的声源定位方法、装置和电子装置"
 authors:
+- 陈永华
+- 韩蕊心
 - admin_CH
-date: "2026-01-01T00:00:00Z"
+- 魏艳
+- 朱江
+- 瞿逢重
+date: "2026-01-14T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2026-01-14T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. CN202610049023.4. Status cue: Published invention application."
 publication_short: "Chinese Invention Patent"
-abstract: "Chinese invention patent entry associated with Shaojian Yang / 杨劭坚. Patent/application no.: CN202610049023.4. Status cue: Published invention application. Source cue: Baiten Chinese patent search."
+abstract: "Chinese invention patent entry associated with Shaojian Yang / 杨劭坚. Patent/application no.: CN202610049023.4. Status cue: Published invention application. Source cue: PatentGuru public patent search; Baiten Chinese patent search."
 summary: "Published invention application: CN202610049023.4."
 tags:
 - Chinese invention patents
@@ -16,6 +21,8 @@ featured: false
 links:
 - name: Baiten record
   url: "https://www.baiten.cn/results/s/CN202610049023.4/.html?type=s"
+- name: PatentGuru record
+  url: "https://www.patentguru.com/CN122109997A"
 - name: CNIPA patent publication search
   url: "https://epub.cnipa.gov.cn/"
 - name: CNIPA patent search and analysis
@@ -41,8 +48,10 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: CN202610049023.4
+- 申请日 / Filing date: 2026-01-14
+- 发明人 / Inventors: 陈永华; 韩蕊心; 杨劭坚; 魏艳; 朱江; 瞿逢重
 - Status cue: Published invention application
-- Source cue: Baiten Chinese patent search
+- Source cue: PatentGuru public patent search; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202610049023.4/.html?type=s>
 - Official verification entrances: <https://epub.cnipa.gov.cn/> and <https://pss-system.cponline.cnipa.gov.cn/>
 

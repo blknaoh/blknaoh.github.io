@@ -1,10 +1,17 @@
 ---
 title: "一种基于分布式声学传感的海底光电复合缆定位方法"
 authors:
+- 林建民
+- 何旭涛
+- 唐瑶琳
+- 方孙珂
+- 舒江政
+- 瞿逢重
 - admin_CH
-date: "2022-01-01T00:00:00Z"
+- 何润敬
+date: "2022-04-15T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2022-04-15T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202210397450.3 / CN202210397450.3. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +48,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202210397450.3 / CN202210397450.3
+- 申请日 / Filing date: 2022-04-15
+- 发明人 / Inventors: 林建民; 何旭涛; 唐瑶琳; 方孙珂; 舒江政; 瞿逢重; 杨劭坚; 何润敬
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202210397450.3/.html?type=s>

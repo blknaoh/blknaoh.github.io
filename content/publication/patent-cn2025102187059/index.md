@@ -1,10 +1,16 @@
 ---
 title: "一种无刷直流电机的磁干扰消除方法、设备及介质"
 authors:
+- 涂星滨
+- 沙子童
 - admin_CH
-date: "2025-01-01T00:00:00Z"
+- 朱江
+- 魏艳
+- 左名久
+- 瞿逢重
+date: "2025-02-26T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2025-02-26T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. CN202510218705.9. Status cue: Published invention application."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +47,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: CN202510218705.9
+- 申请日 / Filing date: 2025-02-26
+- 发明人 / Inventors: 涂星滨; 沙子童; 杨劭坚; 朱江; 魏艳; 左名久; 瞿逢重
 - Status cue: Published invention application
 - Source cue: Publication notice in certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202510218705.9/.html?type=s>

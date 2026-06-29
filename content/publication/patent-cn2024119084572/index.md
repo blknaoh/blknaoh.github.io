@@ -1,10 +1,19 @@
 ---
 title: "一种水下目标定位方法和装置"
 authors:
+- 瞿逢重
+- 朱昊頔
 - admin_CH
-date: "2024-01-01T00:00:00Z"
+- 周鑫祎
+- 芦义
+- 左名久
+- 胡珊
+- 朱江
+- 魏艳
+- 涂星滨
+date: "2024-12-24T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2024-12-24T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202411908457.2 / CN202411908457.2. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +50,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202411908457.2 / CN202411908457.2
+- 申请日 / Filing date: 2024-12-24
+- 发明人 / Inventors: 瞿逢重; 朱昊頔; 杨劭坚; 周鑫祎; 芦义; 左名久; 胡珊; 朱江; 魏艳; 涂星滨
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202411908457.2/.html?type=s>

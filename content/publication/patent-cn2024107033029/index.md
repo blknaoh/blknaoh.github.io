@@ -1,10 +1,16 @@
 ---
 title: "一种基于S2C的目标方位角估计方法、系统和设备"
 authors:
+- 魏艳
+- 陈鸿江
+- 李志鹏
 - admin_CH
-date: "2024-01-01T00:00:00Z"
+- 陆雪松
+- 章旻昊
+- 瞿逢重
+date: "2024-06-03T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2024-06-03T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202410703302.9 / CN202410703302.9. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +47,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202410703302.9 / CN202410703302.9
+- 申请日 / Filing date: 2024-06-03
+- 发明人 / Inventors: 魏艳; 陈鸿江; 李志鹏; 杨劭坚; 陆雪松; 章旻昊; 瞿逢重
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202410703302.9/.html?type=s>

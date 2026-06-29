@@ -1,10 +1,18 @@
 ---
 title: "一种基于距离测算的水声节点自适应重传方法"
 authors:
+- 瞿逢重
+- 陈熙铭
+- 楼汀炜
+- 郑纪星
+- 涂星滨
+- 魏艳
+- 李志鹏
 - admin_CH
-date: "2023-01-01T00:00:00Z"
+- 陆雪松
+date: "2023-03-21T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2023-03-21T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. CN202310275405.5. Status cue: Granted in Chinese patent search; publication notice in certificate archive."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +49,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: CN202310275405.5
+- 申请日 / Filing date: 2023-03-21
+- 发明人 / Inventors: 瞿逢重; 陈熙铭; 楼汀炜; 郑纪星; 涂星滨; 魏艳; 李志鹏; 杨劭坚; 陆雪松
 - Status cue: Granted in Chinese patent search; publication notice in certificate archive
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202310275405.5/.html?type=s>

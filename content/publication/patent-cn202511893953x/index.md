@@ -1,10 +1,19 @@
 ---
 title: "一种用于跨介质直接声通信的无人机噪声消除方法及装置"
 authors:
+- 魏艳
+- 王明靖涵
 - admin_CH
-date: "2025-01-01T00:00:00Z"
+- 瞿逢重
+- 姚建铨
+- 谢佳轩
+- 徐航
+- 李广胜
+- 朱江
+- 涂星滨
+date: "2025-12-16T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2025-12-16T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. CN202511893953.X. Status cue: Granted in Chinese patent search; publication notice in certificate archive."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +50,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: CN202511893953.X
+- 申请日 / Filing date: 2025-12-16
+- 发明人 / Inventors: 魏艳; 王明靖涵; 杨劭坚; 瞿逢重; 姚建铨; 谢佳轩; 徐航; 李广胜; 朱江; 涂星滨
 - Status cue: Granted in Chinese patent search; publication notice in certificate archive
 - Source cue: Publication notice in certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202511893953.X/.html?type=s>

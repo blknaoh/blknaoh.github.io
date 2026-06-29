@@ -1,10 +1,16 @@
 ---
 title: "基于水声通信的深海图像传输装置、方法、设备、介质及产品"
 authors:
+- 魏艳
+- 沈睿杰
 - admin_CH
-date: "2025-01-01T00:00:00Z"
+- 苏家艺
+- 朱江
+- 涂星滨
+- 瞿逢重
+date: "2025-01-09T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2025-01-09T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. CN202510032869.2. Status cue: Published invention application."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +47,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: CN202510032869.2
+- 申请日 / Filing date: 2025-01-09
+- 发明人 / Inventors: 魏艳; 沈睿杰; 杨劭坚; 苏家艺; 朱江; 涂星滨; 瞿逢重
 - Status cue: Published invention application
 - Source cue: Publication notice in certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202510032869.2/.html?type=s>

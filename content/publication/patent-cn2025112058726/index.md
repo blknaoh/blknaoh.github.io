@@ -1,10 +1,18 @@
 ---
 title: "一种适用于高浊度海域的水质智能监测系统及方法"
 authors:
+- 瞿逢重
+- 董飞鸿
 - admin_CH
-date: "2025-01-01T00:00:00Z"
+- 韩海斌
+- 李莉
+- 魏艳
+- 朱江
+- 吴叶舟
+- 涂星滨
+date: "2025-08-27T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2025-08-27T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202511205872.6 / CN202511205872.6. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +49,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202511205872.6 / CN202511205872.6
+- 申请日 / Filing date: 2025-08-27
+- 发明人 / Inventors: 瞿逢重; 董飞鸿; 杨劭坚; 韩海斌; 李莉; 魏艳; 朱江; 吴叶舟; 涂星滨
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202511205872.6/.html?type=s>

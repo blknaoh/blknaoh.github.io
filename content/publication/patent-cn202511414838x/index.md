@@ -1,10 +1,17 @@
 ---
 title: "一种水声信号调制方式识别方法及相关装置"
 authors:
+- 魏艳
+- 付雁冰
+- 沈睿杰
+- 吴洁
 - admin_CH
-date: "2025-01-01T00:00:00Z"
+- 朱江
+- 涂星滨
+- 瞿逢重
+date: "2025-09-30T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2025-09-30T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202511414838.X / CN202511414838.X. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +48,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202511414838.X / CN202511414838.X
+- 申请日 / Filing date: 2025-09-30
+- 发明人 / Inventors: 魏艳; 付雁冰; 沈睿杰; 吴洁; 杨劭坚; 朱江; 涂星滨; 瞿逢重
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202511414838.X/.html?type=s>

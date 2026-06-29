@@ -2,13 +2,21 @@
 title: "一种冰系留剖面节点自适应任务调度方法及系统"
 authors:
 - admin_CH
-date: "2026-01-01T00:00:00Z"
+- 谢金浩
+- 张润豪
+- 谢佳轩
+- 陈永华
+- 徐航
+- 何佳敏
+- 瞿逢重
+- 姚建铨
+date: "2026-02-03T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2026-02-03T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. CN202610151065.9. Status cue: Granted in Chinese patent search."
 publication_short: "Chinese Invention Patent"
-abstract: "Chinese invention patent entry associated with Shaojian Yang / 杨劭坚. Patent/application no.: CN202610151065.9. Status cue: Granted in Chinese patent search. Source cue: Baiten Chinese patent search."
+abstract: "Chinese invention patent entry associated with Shaojian Yang / 杨劭坚. Patent/application no.: CN202610151065.9. Status cue: Granted in Chinese patent search. Source cue: PatentGuru public patent search; Baiten Chinese patent search."
 summary: "Granted in Chinese patent search: CN202610151065.9."
 tags:
 - Chinese invention patents
@@ -16,6 +24,8 @@ featured: false
 links:
 - name: Baiten record
   url: "https://www.baiten.cn/results/s/CN202610151065.9/.html?type=s"
+- name: PatentGuru record
+  url: "https://www.patentguru.com/CN121644676B"
 - name: CNIPA patent publication search
   url: "https://epub.cnipa.gov.cn/"
 - name: CNIPA patent search and analysis
@@ -41,8 +51,10 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: CN202610151065.9
+- 申请日 / Filing date: 2026-02-03
+- 发明人 / Inventors: 杨劭坚; 谢金浩; 张润豪; 谢佳轩; 陈永华; 徐航; 何佳敏; 瞿逢重; 姚建铨
 - Status cue: Granted in Chinese patent search
-- Source cue: Baiten Chinese patent search
+- Source cue: PatentGuru public patent search; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202610151065.9/.html?type=s>
 - Official verification entrances: <https://epub.cnipa.gov.cn/> and <https://pss-system.cponline.cnipa.gov.cn/>
 

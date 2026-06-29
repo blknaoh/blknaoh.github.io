@@ -1,10 +1,16 @@
 ---
 title: "一种基于虚拟内存的数据管理方法、设备和存储介质"
 authors:
+- 涂星滨
+- 何雨嘉
 - admin_CH
-date: "2024-01-01T00:00:00Z"
+- 朱昊頔
+- 周钦
+- 魏艳
+- 瞿逢重
+date: "2024-05-17T00:00:00Z"
 doi: ""
-publishDate: "2026-06-29T00:00:00Z"
+publishDate: "2024-05-17T00:00:00Z"
 publication_types: ["patent"]
 publication: "Chinese invention patent/application. ZL202410612413.9 / CN202410612413.9. Status cue: Granted."
 publication_short: "Chinese Invention Patent"
@@ -41,6 +47,8 @@ slides: ""
 This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
 
 - Patent/application no.: ZL202410612413.9 / CN202410612413.9
+- 申请日 / Filing date: 2024-05-17
+- 发明人 / Inventors: 涂星滨; 何雨嘉; 杨劭坚; 朱昊頔; 周钦; 魏艳; 瞿逢重
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202410612413.9/.html?type=s>
