@@ -53,12 +53,12 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/blknaoh
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
-  - icon: cv
+  - icon: researchgate
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: https://www.researchgate.net/profile/Shaojian-Yang
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=KvxU4p4AAAAJ
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
