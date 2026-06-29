@@ -31,6 +31,41 @@
   ].filter(Number.isFinite);
   const yearMin = Math.min(...yearValues);
   const yearMax = Math.max(...yearValues);
+  const provincePalette = [
+    "#2f7c73",
+    "#ca5d45",
+    "#3f6ca8",
+    "#9b6a31",
+    "#7465b2",
+    "#4f8745",
+    "#bf6685",
+    "#7f6f38",
+    "#2f789b",
+    "#b45862",
+    "#5d7f3f",
+    "#b77a2d",
+    "#628a70",
+    "#865b98",
+    "#4b8788",
+    "#bd6a43",
+    "#5d75bd",
+    "#8f783d",
+    "#3f8b5a",
+    "#b85f78",
+    "#74813d",
+    "#736bad",
+    "#5e8999",
+    "#bb7048"
+  ];
+  const provinceColors = new Map(
+    [...new Set(
+      data.cities
+        .filter((city) => city.country === "CN" && city.province)
+        .map((city) => city.province)
+    )]
+      .sort((a, b) => a.localeCompare(b, "zh-Hans"))
+      .map((province, index) => [province, provincePalette[index % provincePalette.length]])
+  );
   const chinaBounds = L.latLngBounds([17.5, 72], [53.8, 136.5]);
 
   const map = L.map("footprints-map", {
@@ -167,7 +202,7 @@
   }
 
   function visitedStyle(item) {
-    const color = colorForYear(item.firstVisit);
+    const color = colorForItem(item);
     return {
       color,
       weight: 1.2,
@@ -175,6 +210,13 @@
       fillOpacity: item.kind === "country" ? 0.42 : 0.56,
       opacity: 1
     };
+  }
+
+  function colorForItem(item) {
+    if (item.kind !== "country" && item.country === "CN" && provinceColors.has(item.province)) {
+      return provinceColors.get(item.province);
+    }
+    return colorForYear(item.firstVisit);
   }
 
   function renderWorld() {

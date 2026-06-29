@@ -69,7 +69,7 @@ window.SJY_FOOTPRINTS = {
     { id: "haibei", name: "海北", nameEn: "Haibei", country: "CN", province: "青海", firstVisit: 2015, lat: 36.954, lng: 100.900, photos: [], source: "paper-map" },
     { id: "hainan-qinghai", name: "海南州", nameEn: "Hainan Prefecture", country: "CN", province: "青海", firstVisit: 2015, lat: 36.286, lng: 100.620, photos: [], source: "paper-map" },
     { id: "haidong", name: "海东", nameEn: "Haidong", country: "CN", province: "青海", firstVisit: 2015, lat: 36.502, lng: 102.104, photos: [], source: "paper-map" },
-    { id: "qamdo", name: "昌都", nameEn: "Qamdo", country: "CN", province: "西藏", firstVisit: 2015, lat: 31.140, lng: 97.172, photos: [], source: "paper-map" },
+    { id: "panjin", name: "盘锦", nameEn: "Panjin", country: "CN", province: "辽宁", firstVisit: 2015, lat: 41.119, lng: 122.070, photos: [], source: "paper-map" },
     { id: "yingkou", name: "营口", nameEn: "Yingkou", country: "CN", province: "辽宁", firstVisit: 2015, lat: 40.667, lng: 122.235, photos: [], source: "paper-map" },
     { id: "dalian", name: "大连", nameEn: "Dalian", country: "CN", province: "辽宁", firstVisit: 2015, lat: 38.914, lng: 121.614, photos: [], source: "paper-map" },
     { id: "zhangjiakou", name: "张家口", nameEn: "Zhangjiakou", country: "CN", province: "河北", firstVisit: 2016, lat: 40.767, lng: 114.887, photos: [], source: "paper-map" },
