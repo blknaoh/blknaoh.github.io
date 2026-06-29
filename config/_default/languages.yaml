@@ -17,9 +17,18 @@ zh:
   contentDir: content
   title: Shaojian Yang
   params:
-    description: Shaojian Yang's academic homepage.
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+    description: 杨劭坚的个人学术主页。
+  menu:
+    main:
+      - name: 简介
+        url: '#about'
+        weight: 10
+      - name: 博文
+        url: '#posts'
+        weight: 20
+      - name: 论文与专利
+        url: '#featured'
+        weight: 30
+      - name: 联系
+        url: '#contact'
+        weight: 40

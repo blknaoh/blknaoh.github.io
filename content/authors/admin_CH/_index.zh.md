@@ -1,9 +1,6 @@
 ---
 # Display name
-title: 杨劭坚  
-
-# Name pronunciation (optional)
-# name_pronunciation: Chien Shiung Wu
+title: 杨劭坚
 
 # Full name (for SEO)
 first_name: 杨劭坚
@@ -18,6 +15,7 @@ superuser: true
 
 # Role/position/tagline
 role: 助理研究员 / 博士后
+
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: 浙江大学
@@ -43,9 +41,6 @@ education:
       year: 2015 - 2019
 
 # Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas

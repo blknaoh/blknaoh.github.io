@@ -24,6 +24,10 @@ image:
 
 **Language:** English | [中文](/zh/post/das-underwater-communications/)
 
+![Cable-assisted AUV telemetry framework](cable-telemetry-framework-en.svg)
+
+*Figure. Cable-assisted AUV telemetry framework, redrawn from the system concept in Chapter 5 of my doctoral dissertation.*
+
 Underwater communication is usually introduced through familiar technical limits: bandwidth is narrow, sound propagation is slow, multipath is messy, and Doppler spread is hard to tame. My doctoral dissertation started from an even more basic difficulty: sometimes the receiver is simply not there.
 
 An autonomous underwater vehicle can spend hours or days collecting valuable data during ecological surveys, environmental monitoring, deep-sea exploration, or subsea infrastructure inspection. But the data only becomes useful if it can get back to shore in time. In remote oceans, deep water, polar regions, and surface-restricted missions, a relay buoy, a ship, a seabed hydrophone, or a fixed cabled station may be too expensive, too visible, too fragile, or unavailable.
