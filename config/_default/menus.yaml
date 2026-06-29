@@ -13,6 +13,9 @@ main:
   - name: Publications
     url: '#featured'
     weight: 30
+  - name: Patents
+    url: '#patents'
+    weight: 35
   - name: Contact
     url: '#contact'
     weight: 40

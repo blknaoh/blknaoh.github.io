@@ -214,6 +214,26 @@ sections:
     design:
       columns: '2'
       view: citation
+  - block: collection
+    id: patents
+    content:
+      title: Chinese Invention Patents
+      subtitle: ''
+      text: 'Granted and published Chinese invention patents associated with Shaojian Yang / 杨劭坚.'
+      count: 10
+      filters:
+        folders:
+          - publication
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: patent
+    design:
+      columns: '2'
+      view: citation
 #  - block: collection
 #    id: talks
 #    content:
