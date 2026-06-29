@@ -1,12 +1,10 @@
 ---
 title: "一种基于延时自相关的LFM信号和HFM信号区分方法"
 authors:
-- 瞿逢重
 - 林哲
 - admin_CH
-- 张旻昊
+- 章旻昊
 - 魏艳
-- 赵航芳
 date: "2022-07-01T00:00:00Z"
 doi: ""
 publishDate: "2022-07-01T00:00:00Z"
@@ -47,7 +45,7 @@ This Chinese invention patent/application is listed as an individual publication
 
 - Patent/application no.: ZL202210774014.3 / CN202210774014.3
 - 申请日 / Filing date: 2022-07-01
-- 发明人 / Inventors: 瞿逢重; 林哲; 杨劭坚; 张旻昊; 魏艳; 赵航芳
+- 发明人 / Inventors: 林哲; 杨劭坚; 章旻昊; 魏艳
 - Status cue: Granted
 - Source cue: Certificate archive; Baiten Chinese patent search
 - Baiten record: <https://www.baiten.cn/results/s/CN202210774014.3/.html?type=s>
