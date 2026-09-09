@@ -2,15 +2,15 @@
 title: "A Spatial Field-Aware Underwater Detection System Based on Active Electrosense"
 authors:
 - Shan Hu
-- Yuwei Yuan
-- Yan Wei
 - Haodi Zhu
+- Xingbin Tu
 - admin
-- Haibin Han
-- Yufan Yuan
+- Xinyi Zhou
+- Yi Lu
+- Mingjiu Zuo
 - Fengzhong Qu
-date: "2025-11-01T00:00:00Z"
-doi: "10.1109/JSEN.2025.3573228"
+date: "2025-01-28T00:00:00Z"
+doi: "10.1109/JSEN.2025.3532117"
 publishDate: "2025-11-01T00:00:00Z"
 publication_types: ["article-journal"]
 publication: "*IEEE Sensors Journal*"
@@ -21,7 +21,7 @@ tags:
 - Sensor systems
 - Marine robotics
 featured: false
-url_doi: "https://doi.org/10.1109/JSEN.2025.3573228"
+url_doi: "https://doi.org/10.1109/JSEN.2025.3532117"
 url_pdf: ""
 url_code: ""
 url_dataset: ""

@@ -3,15 +3,14 @@ title: 'HFGNet: Mitigating Boundary Distortion for Sonar Image Segmentation with
   Frequency Guidance Strategy'
 authors:
 - Haodi Zhu
+- Jiayi Su
 - Haibin Han
-- Xingqian Zhu
 - admin
-- Na Wei
-- Zhenyu Ge
-- Jian Zhang
-- Tao Peng
-date: '2026-05-04T00:00:00Z'
-doi: ''
+- Jinyu Qian
+- Yan Wei
+- Fengzhong Qu
+date: '2026-05-03T00:00:00Z'
+doi: 10.1109/ICASSP55912.2026.11461378
 publishDate: '2026-05-04T00:00:00Z'
 publication_types:
 - paper-conference
@@ -24,6 +23,7 @@ tags:
 - Underwater perception
 - ICASSP
 featured: false
+url_doi: https://doi.org/10.1109/ICASSP55912.2026.11461378
 url_pdf: ''
 url_code: ''
 url_dataset: ''

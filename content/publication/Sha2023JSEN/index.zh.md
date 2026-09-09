@@ -17,7 +17,7 @@ author_notes:
 - ''
 - ''
 - ''
-date: '2023-11-15T00:00:00Z'
+date: '2023-10-09T00:00:00Z'
 doi: 10.1109/JSEN.2023.3321042
 publishDate: '2023-11-15T00:00:00Z'
 publication_types:

@@ -3,16 +3,16 @@ title: An Effective Receptive Field-Guided Parallel Resolution ConvNet for Under
   Salient Object Detection
 authors:
 - Haodi Zhu
-- Haibin Han
-- Xingqian Zhu
-- Zhenyu Ge
-- Na Wei
-- Honghao Yan
+- Jiayi Su
+- Xinyi Zhou
 - admin
-- Jian Zhang
-- Tao Peng
-date: '2026-01-01T00:00:00Z'
-doi: 10.1109/JOE.2025.3605017
+- Haibin Han
+- Wenchu Wang
+- Jiayi Feng
+- Yan Wei
+- Fengzhong Qu
+date: '2026-05-12T00:00:00Z'
+doi: 10.1109/JOE.2026.3679238
 publishDate: '2026-01-01T00:00:00Z'
 publication_types:
 - article-journal
@@ -24,7 +24,7 @@ tags:
 - ConvNet
 - Ocean engineering
 featured: false
-url_doi: https://doi.org/10.1109/JOE.2025.3605017
+url_doi: https://doi.org/10.1109/JOE.2026.3679238
 url_pdf: ''
 url_code: ''
 url_dataset: ''

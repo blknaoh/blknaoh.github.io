@@ -7,7 +7,7 @@ authors:
 - Xiaoxiao Zhuo
 - Xingbin Tu
 - Yan Wei
-date: "2023-11-01T00:00:00Z"
+date: "2023-10-09T00:00:00Z"
 doi: "10.11990/jheu.202306023"
 publishDate: "2023-11-01T00:00:00Z"
 publication_types: ["article-journal"]

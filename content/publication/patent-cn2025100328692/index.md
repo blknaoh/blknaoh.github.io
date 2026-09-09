@@ -12,22 +12,18 @@ date: "2025-01-09T00:00:00Z"
 doi: ""
 publishDate: "2025-01-09T00:00:00Z"
 publication_types: ["patent"]
-publication: "Chinese invention patent/application. CN202510032869.2. Status cue: Published invention application."
+publication: "Chinese invention patent application. Application publication no.: CN119865693A. Status: Published invention application."
 publication_short: "Chinese Invention Patent"
-abstract: "Chinese invention patent entry associated with Shaojian Yang / 杨劭坚. Patent/application no.: CN202510032869.2. Status cue: Published invention application. Source cue: Publication notice in certificate archive; Baiten Chinese patent search."
-summary: "Published invention application: CN202510032869.2."
+abstract: "Chinese invention patent application associated with Shaojian Yang / 杨劭坚. Application publication no.: CN119865693A. Status: Published invention application. Source: CNIPA Patent Publication and Gazette."
+summary: "Published invention application: CN119865693A."
 tags:
 - Chinese invention patents
 featured: false
 links:
-- name: Baiten record
-  url: "https://www.baiten.cn/results/s/CN202510032869.2/.html?type=s"
+- name: CNIPA gazette record
+  url: "http://epub.cnipa.gov.cn/patent/CN119865693A"
 - name: CNIPA patent publication search
   url: "https://epub.cnipa.gov.cn/"
-- name: CNIPA patent search and analysis
-  url: "https://pss-system.cponline.cnipa.gov.cn/"
-- name: CNKI
-  url: "https://www.cnki.net/"
 url_pdf: ""
 url_code: ""
 url_dataset: ""
@@ -44,14 +40,15 @@ projects: []
 slides: ""
 ---
 
-This Chinese invention patent/application is listed as an individual publication entry so it appears together with journal and conference papers in the Publications collection.
+This Chinese invention patent application is listed as an individual entry together with journal and conference papers.
 
-- Patent/application no.: CN202510032869.2
-- 申请日 / Filing date: 2025-01-09
-- 发明人 / Inventors: 魏艳; 沈睿杰; 杨劭坚; 苏家艺; 朱江; 涂星滨; 瞿逢重
-- Status cue: Published invention application
-- Source cue: Publication notice in certificate archive; Baiten Chinese patent search
-- Baiten record: <https://www.baiten.cn/results/s/CN202510032869.2/.html?type=s>
-- Official verification entrances: <https://epub.cnipa.gov.cn/> and <https://pss-system.cponline.cnipa.gov.cn/>
+- Application publication no.: CN119865693A
+- Filing date: 2025-01-09
+- Application publication date: 2025-04-22
+- Inventors: 魏艳; 沈睿杰; 杨劭坚; 苏家艺; 朱江; 涂星滨; 瞿逢重
+- Status: Published invention application
+- Source: CNIPA Patent Publication and Gazette
+- Official gazette record: <http://epub.cnipa.gov.cn/patent/CN119865693A>
+- Official search: <https://epub.cnipa.gov.cn/>
 
-*Note:* The status cue is a public-source summary rather than a legal opinion. For legal finality, please verify the latest bibliographic and legal-status records in the CNIPA/CNKI official systems.
+*Note:* The CNIPA patent register and official search system control for later legal-status changes.
